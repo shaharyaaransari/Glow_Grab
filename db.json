@@ -861,6 +861,853 @@
       "oldPrice": 1699,
       "rating": 4.7,
       "review": 54
+    },
+    {
+      "id": 52,
+      "category": "women",
+      "subCate": "Tops",
+      "name": "Wine Crepe Blouson Top",
+      "brand": "RARE",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/1/d/tr:w-480,/1d4051fEP1310_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/1/d/1d4051fEP1310_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/1/d/1d4051fEP1310_5.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/1/d/1d4051fEP1310_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 490,
+      "oldPrice": 999,
+      "rating": 3.8,
+      "review": 150
+    },
+    {
+      "id": 53,
+      "category": "women",
+      "subCate": "Tops",
+      "name": "Womens Tie Knot Long Sleeve Top",
+      "brand": "Kibo",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/c/6/tr:w-480,/c65e7edLVT1170-B_4.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/c/6/tr:w-480,/c65e7edLVT1170-B_1.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/c/6/c65e7edLVT1170-B_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/c/6/tr:w-480,/c65e7edLVT1170-B_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 663,
+      "oldPrice": 1699,
+      "rating": 4.0,
+      "review": 36
+    },
+    {
+      "id": 54,
+      "category": "women",
+      "subCate": "Tops",
+      "name": "Black Front Slit Maxi Top",
+      "brand": "RIGO",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/0/tr:w-480,/405a7c6Rigo-WTOP253-1240-Black_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/4/0/405a7c6Rigo-WTOP253-1240-Black_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/4/0/405a7c6Rigo-WTOP253-1240-Black_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/4/0/405a7c6Rigo-WTOP253-1240-Black_5.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 495,
+      "oldPrice": 1099,
+      "rating": 3.6,
+      "review": 551
+    },
+    {
+      "id": 55,
+      "category": "women",
+      "subCate": "Tops",
+      "name": "Striped Asymmetric Top",
+      "brand": "B'Infinite",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/9/e/tr:w-480,/9e1267cC82_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/e/9e1267cC82_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/e/9e1267cC82_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/e/9e1267cC82_4.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 2250,
+      "oldPrice": 2499,
+      "rating": 2.0,
+      "review": 10
+    },
+    {
+      "id": 56,
+      "category": "women",
+      "subCate": "Tops",
+      "name": "Off White Balloon Sleeve Top",
+      "brand": "MISH",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/m/m/tr:w-480,/mm-642-1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/m/m/mm-642-2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/m/m/mm-642-3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/m/m/mm-642-4.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 1140,
+      "oldPrice": 1899,
+      "rating": 3.8,
+      "review": 353
+    },
+    {
+      "id": 57,
+      "category": "women",
+      "subCate": "Jackets and Coats",
+      "name": "Women Black Solid Blazer",
+      "brand": "Pannkh",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/2/0/tr:w-480,/2014blacka-1_f34137ae.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/0/2014blacka-2_b0eb068c.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/0/2014blacka-3_412e4d6b.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/0/2014blacka-4_13275a22.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 1584,
+      "oldPrice": 3599,
+      "rating": 3.4,
+      "review": 7
+    },
+    {
+      "id": 58,
+      "category": "women",
+      "subCate": "Jackets and Coats",
+      "name": "Sweet Green Regular Tailored Button Blazer",
+      "brand": "Lipsy",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/c/d/tr:w-480,/cd4402bMLIPSY00003091_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/c/d/cd4402bMLIPSY00003091_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/c/d/cd4402bMLIPSY00003091_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/c/d/cd4402bMLIPSY00003091_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 6020,
+      "oldPrice": 8599,
+      "rating": 4.3,
+      "review": 184
+    },
+    {
+      "id": 59,
+      "category": "women",
+      "subCate": "Jackets and Coats",
+      "name": "Black Solid Formal Solid Blazer",
+      "brand": "FableStreet",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/8/b/tr:w-480,/8bb1125NYK_FBS0635_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/8/b/8bb1125NYK_FBS0635_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/8/b/8bb1125NYK_FBS0635_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/8/b/8bb1125NYK_FBS0635_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 3217,
+      "oldPrice": 2495,
+      "rating": 4.1,
+      "review": 53
+    },
+    {
+      "id": 60,
+      "category": "women",
+      "subCate": "Jackets and Coats",
+      "name": "Women Solid Black Cotton Casual Shrug",
+      "brand": "Style Quotient",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/s/s/tr:w-480,/ss19sqlex_eu_1_951dd266.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/s/s/ss19sqlex_eu_2_3ec36c5c.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/s/s/ss19sqlex_eu_4_b89caa72.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/s/s/ss19sqlex_eu_5_23978016.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 679,
+      "oldPrice": 1499,
+      "rating": 3.5,
+      "review": 49
+    },
+    {
+      "id": 61,
+      "category": "women",
+      "subCate": "Jackets and Coats",
+      "name": "Women Solid Black Jacket",
+      "brand": "VERO MODA",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/d/3/tr:w-480,/d3caee0NYK_VEROM00025514_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/3/d3caee0NYK_VEROM00025514_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/3/d3caee0NYK_VEROM00025514_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/3/d3caee0NYK_VEROM00025514_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 1720,
+      "oldPrice": 4299,
+      "rating": 2.9,
+      "review": 102
+    },
+    {
+      "id": 62,
+      "category": "women",
+      "subCate": "Dresses",
+      "name": "Red Floral Printed Maxi Dress",
+      "brand": "The Vanca",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/e/8/tr:w-480,/e8781d6TheVanca-DRF502631_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/8/e8781d6TheVanca-DRF502631_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/8/e8781d6TheVanca-DRF502631_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/8/e8781d6TheVanca-DRF502631_6.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 1288,
+      "oldPrice": 2799,
+      "rating": 4.1,
+      "review": 138
+    },
+    {
+      "id": 63,
+      "category": "women",
+      "subCate": "Dresses",
+      "name": "Sunshine Multi-Color One Shoulder Dress (XS)",
+      "brand": "B'Infinite",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/f/5/tr:w-480,/f5fbff0D67_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/f/5/f5fbff0D67_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/f/5/f5fbff0D67_5.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/f/5/f5fbff0D67_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 3420,
+      "oldPrice": 3799,
+      "rating": 3.4,
+      "review": 8
+    },
+    {
+      "id": 64,
+      "category": "women",
+      "subCate": "Dresses",
+      "name": "Ruched Back Tie Dress Beige & Brown",
+      "brand": "ANVI Be Yourself",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/9/c/tr:w-480,/9c1a518ANVI-2-DD0233_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/c/9c1a518ANVI-2-DD0233_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/c/9c1a518ANVI-2-DD0233_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/c/9c1a518ANVI-2-DD0233_5.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 1040,
+      "oldPrice": 2598,
+      "rating": 4.2,
+      "review": 127
+    },
+    {
+      "id": 65,
+      "category": "women",
+      "subCate": "Dresses",
+      "name": "Slime Green Backless Dress",
+      "brand": "ORDINAREE",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/8/5/tr:w-480,/85676b1ORN003_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/8/5/85676b1ORN003_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/8/5/85676b1ORN003_6.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/8/5/85676b1ORN003_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 5185,
+      "oldPrice": 6100,
+      "rating": 3.5,
+      "review": 19
+    },
+    {
+      "id": 66,
+      "category": "women",
+      "subCate": "Dresses",
+      "name": "Women Solid Purple Dress",
+      "brand": "VERO MODA",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/d/7/tr:w-480,/d71eee0NYK_VEROM00028001_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/7/d71eee0NYK_VEROM00028001_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/7/d71eee0NYK_VEROM00028001_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/7/d71eee0NYK_VEROM00028001_5.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 3240,
+      "oldPrice": 8999,
+      "rating": 4.3,
+      "review": 34
+    },
+    {
+      "id": 67,
+      "category": "women",
+      "subCate": "T-shirts",
+      "name": "Womens Graphic Drop Shoulder V-Neck T-Shirt",
+      "brand": "JUNEBERRY",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/6/0/tr:w-480,/608b341MJUNEB00000842_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/6/0/608b341MJUNEB00000842_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/6/0/608b341MJUNEB00000842_5.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/6/0/608b341MJUNEB00000842_2.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 699,
+      "oldPrice": 1199,
+      "rating": 3.6,
+      "review": 64
+    },
+    {
+      "id": 68,
+      "category": "women",
+      "subCate": "T-shirts",
+      "name": "Women Lavender Round Neck Half Sleeve T-Shirt",
+      "brand": "RIGO",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/5/e/tr:w-480,/5e46f55WTOP363-1412_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/5/e/5e46f55WTOP363-1412_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/5/e/5e46f55WTOP363-1412_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/5/e/5e46f55WTOP363-1412_5.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 451,
+      "oldPrice": 1099,
+      "rating": 4.4,
+      "review": 14
+    },
+    {
+      "id": 69,
+      "category": "women",
+      "subCate": "T-shirts",
+      "name": "Women Round Neck Short Sleeves T-Shirt",
+      "brand": "Harpa",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/g/r/tr:w-480,/gr5958-grey_1_4907eef2.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/g/r/gr5958-grey_4_ccf9c3d5.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/g/r/gr5958-grey_5_591584ce.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/g/r/gr5958-grey_2_c1b828b7.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 540,
+      "oldPrice": 1199,
+      "rating": 3.9,
+      "review": 76
+    },
+    {
+      "id": 70,
+      "category": "women",
+      "subCate": "T-shirts",
+      "name": "Magenta Graphic Pure Cotton Womens TandShirt",
+      "brand": "Mode by Red Tape",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/2/e/tr:w-480,/2e82667MAT0663_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/e/2e82667MAT0663_5.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/e/2e82667MAT0663_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/e/2e82667MAT0663_2.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 539,
+      "oldPrice": 1799,
+      "rating": 3.6,
+      "review": 91
+    },
+    {
+      "id": 71,
+      "category": "women",
+      "subCate": "T-shirts",
+      "name": "Pastel Green Graphic Oversized T-Shirt",
+      "brand": "DILLINGER",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/w/m/tr:w-480,/wmncr103pgrn_1_bd51cadd.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/w/m/wmncr103pgrn_3_8057ef23.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/w/m/wmncr103pgrn_4_fbd0ee5a.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/w/m/wmncr103pgrn_5_aab453c7.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 588,
+      "oldPrice": 1399,
+      "rating": 4.0,
+      "review": 117
+    },
+    {
+      "id": 72,
+      "category": "women",
+      "subCate": "Sarees",
+      "name": "Black Georgette Saree with Stitched Blouse With Belt",
+      "brand": "Lavanya The Label",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/7/tr:w-480,/a72807bLBL101KS389_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/a/7/a72807bLBL101KS389_12.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/a/7/a72807bLBL101KS389_11.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/a/7/a72807bLBL101KS389_13.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 5320,
+      "oldPrice": 5599,
+      "rating": 3.4,
+      "review": 104
+    },
+    {
+      "id": 73,
+      "category": "women",
+      "subCate": "Sarees",
+      "name": "Pink Patola Leheriya Saree with Unstitched",
+      "brand": "EXCLUSIVA",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/1/8/tr:w-480,/1895c0dEXV26_C18_1003_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/1/8/1895c0dEXV26_C18_1003_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/1/8/1895c0dEXV26_C18_1003_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 3558,
+      "oldPrice": 5975,
+      "rating": 5.0,
+      "review": 209
+    },
+    {
+      "id": 74,
+      "category": "women",
+      "subCate": "Sarees",
+      "name": "Chirpy Birds Beige Black and Yellow Half Saree",
+      "brand": "Rustorange",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/z/k/tr:w-480,/zkp1070mh192_2_158d755a.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/z/k/zkp1070mh192_5_36f95baa.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/z/k/zkp1070mh192_4_8cce2bf1.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/z/k/zkp1070mh192_3_5e7650ed.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 2585,
+      "oldPrice": 4699,
+      "rating": 3.9,
+      "review": 79
+    },
+    {
+      "id": 75,
+      "category": "women",
+      "subCate": "Sarees",
+      "name": "Black Georgette Stones Party Wear Saree",
+      "brand": "Likha by Nykaa Fashion",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/8/tr:w-480,/480f2c4AWLIKPT0102_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/4/8/480f2c4AWLIKPT0102_5.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/4/8/480f2c4AWLIKPT0102_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/4/8/480f2c4AWLIKPT0102_6.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 2700,
+      "oldPrice": 3599,
+      "rating": 3.2,
+      "review": 28
+    },
+    {
+      "id": 76,
+      "category": "women",
+      "subCate": "Sarees",
+      "name": "Peacock Blue Swarovski Georgette Saree",
+      "brand": "Koskii",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/e/b/tr:w-480,/eb2921eSAUS0021893-PEACOCK-BLUE_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/b/eb2921eSAUS0021893-PEACOCK-BLUE_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/b/eb2921eSAUS0021893-PEACOCK-BLUE_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/b/eb2921eSAUS0021893-PEACOCK-BLUE_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 2993,
+      "oldPrice": 3990,
+      "rating": 3.4,
+      "review": 251
+    },
+    {
+      "id": 77,
+      "category": "women",
+      "subCate": "Lahengas",
+      "name": "Stylish Deep Pink Silk Semi Stitched Lehenga",
+      "brand": "Odette",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/8/3/tr:w-480,/836f80aSKGUV121995_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/8/3/836f80aSKGUV121995_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/8/3/836f80aSKGUV121995_2.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 9980,
+      "oldPrice": 22176,
+      "rating": 4.6,
+      "review": 196
+    },
+    {
+      "id": 78,
+      "category": "women",
+      "subCate": "Lahengas",
+      "name": "Maroon and Rust Polka and Jaal Festive Lehenga",
+      "brand": "Rustorange",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/9/d/tr:w-480,/9d40674RS_ZKP1005PG743_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/d/9d40674RS_ZKP1005PG743_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/d/9d40674RS_ZKP1005PG743_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/d/9d40674RS_ZKP1005PG743_8.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 2200,
+      "oldPrice": 4399,
+      "rating": 3.1,
+      "review": 588
+    },
+    {
+      "id": 79,
+      "category": "women",
+      "subCate": "Lahengas",
+      "name": "Black Georgette Semi-Stitched Lehenga with Dupatta",
+      "brand": "Pink Ethnic",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/9/9/tr:w-480,/99bfba4PE1031_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/9/99bfba4PE1031_5.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/9/99bfba4PE1031_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/9/9/99bfba4PE1031_2.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 4500,
+      "oldPrice": 9000,
+      "rating": 3.9,
+      "review": 143
+    },
+    {
+      "id": 80,
+      "category": "women",
+      "subCate": "Lahengas",
+      "name": "Vriska Green Skirt with Jacket",
+      "brand": "Thread & Button",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/2/a/tr:w-480,/2a82f6eKMM-0010_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/a/2a82f6eKMM-0010_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/a/2a82f6eKMM-0010_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/a/2a82f6eKMM-0010_2.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 4518,
+      "oldPrice": 6950,
+      "rating": 4.4,
+      "review": 274
+    },
+    {
+      "id": 81,
+      "category": "women",
+      "subCate": "Lahengas",
+      "name": "Pink & Blue Soft Net Semi Stitched Lehenga",
+      "brand": "Odette",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/b/2/tr:w-480,/b2a59bbNYKFF_ODETT00004523_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/b/2/b2a59bbNYKFF_ODETT00004523_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/b/2/b2a59bbNYKFF_ODETT00004523_2.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 3244,
+      "oldPrice": 7207,
+      "rating": 2.1,
+      "review": 87
+    },
+    {
+      "id": 82,
+      "category": "women",
+      "subCate": "Palazzos",
+      "name": "Hand Embroidered White Cotton Palazzo",
+      "brand": "ADA",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/d/tr:w-480,/ada_a100207_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/a/d/ada_a100207_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/a/d/ada_a100207_6.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/a/d/ada_a100207_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 1790,
+      "oldPrice": 1790,
+      "rating": 4.5,
+      "review": 124
+    },
+    {
+      "id": 83,
+      "category": "women",
+      "subCate": "Palazzos",
+      "name": "Olive Palazzo",
+      "brand": "Tjori",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/t/j/tr:w-480,/tj_mk-202-21_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/t/j/tj_mk-202-21_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/t/j/tj_mk-202-21_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/t/j/tj_mk-202-21_4.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 2099,
+      "oldPrice": 3299,
+      "rating": 3.3,
+      "review": 134
+    },
+    {
+      "id": 84,
+      "category": "women",
+      "subCate": "Palazzos",
+      "name": "Black Solid Flared Palazzo",
+      "brand": "W",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/w/_/tr:w-480,/w_8907819931575_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/w/_/w_8907819931575_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/w/_/w_8907819931575_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/w/_/w_8907819931575_2.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 1050,
+      "oldPrice": 1499,
+      "rating": 3.6,
+      "review": 474
+    },
+    {
+      "id": 85,
+      "category": "women",
+      "subCate": "Palazzos",
+      "name": "Yellow & Grey Marble Printed Palazzo",
+      "brand": "AKS",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/y/a/tr:w-480,/ya2396_1_65f41937.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/y/a/ya2396_2_9cbbbaa0.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/y/a/ya2396_5_bc17d59c.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/y/a/ya2396_4_fd13d360.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 450,
+      "oldPrice": 1499,
+      "rating": 4.0,
+      "review": 359
+    },
+    {
+      "id": 86,
+      "category": "women",
+      "subCate": "Palazzos",
+      "name": "Indigo Cotton Printed Flared Palazzo",
+      "brand": "Juniper",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/6/a/tr:w-480,/6a9aac9JNPR0983_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/6/a/6a9aac9JNPR0983_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/6/a/6a9aac9JNPR0983_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/6/a/6a9aac9JNPR0983_6.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 990,
+      "oldPrice": 1799,
+      "rating": 3.7,
+      "review": 112
+    },
+    {
+      "id": 87,
+      "category": "women",
+      "subCate": "Kaftans",
+      "name": "Green Georgette Festive Bandhej Kaftan",
+      "brand": "Juniper",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/a/tr:w-480,/3ad650e3356GREEN-1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/3/a/3ad650e3356GREEN-2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/3/a/3ad650e3356GREEN-3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/3/a/3ad650e3356GREEN-4.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 1036,
+      "oldPrice": 2799,
+      "rating": 4.1,
+      "review": 316
+    },
+    {
+      "id": 88,
+      "category": "women",
+      "subCate": "Kaftans",
+      "name": "Wisteria Peach Tie Dye Kaftan",
+      "brand": "Thread & Button",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/1/5/tr:w-480,/151017bGS-0190_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/1/5/151017bGS-0190_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/1/5/151017bGS-0190_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/1/5/151017bGS-0190_5.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 2470,
+      "oldPrice": 3800,
+      "rating": 3.0,
+      "review": 278
+    },
+    {
+      "id": 89,
+      "category": "women",
+      "subCate": "Kaftans",
+      "name": "Peach Geometric Printed Georgette Kaftan",
+      "brand": "Jaipur Kurti",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/7/0/tr:w-480,/701718cMJAIPU00003046_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/7/0/701718cMJAIPU00003046_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/7/0/701718cMJAIPU00003046_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/7/0/701718cMJAIPU00003046_5.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 693,
+      "oldPrice": 1649,
+      "rating": 3.7,
+      "review": 62
+    },
+    {
+      "id": 90,
+      "category": "women",
+      "subCate": "Kaftans",
+      "name": "Rust & Black Printed Kaftans",
+      "brand": "KASSUALLY",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/e/8/tr:w-480,/e8fa22aKSLSHRG5212_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/8/e8fa22aKSLSHRG5212_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/8/e8fa22aKSLSHRG5212_5.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/8/e8fa22aKSLSHRG5212_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 900,
+      "oldPrice": 1999,
+      "rating": 4.2,
+      "review": 406
+    },
+    {
+      "id": 91,
+      "category": "women",
+      "subCate": "Kaftans",
+      "name": "Red Leheriya Kaftan Dress",
+      "brand": "Thread & Button",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/s/g/tr:w-480,/sg-0020-1_6547ed3b.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/s/g/sg-0020-4_60b005e8.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/s/g/sg-0020-3_a91889bb.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/s/g/sg-0020-5_f87581e6.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 2633,
+      "oldPrice": 4050,
+      "rating": 3.4,
+      "review": 393
+    },
+    {
+      "id": 92,
+      "category": "women",
+      "subCate": "Sweatshirts & Hoodies",
+      "name": "Women Navy Blue Solid Sweatshirt",
+      "brand": "Alcis",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/2/b/tr:w-480,/2b5e2fbECJBWSS0013_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/b/2b5e2fbECJBWSS0013_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/b/2b5e2fbECJBWSS0013_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/b/2b5e2fbECJBWSS0013_2.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 805,
+      "oldPrice": 2299,
+      "rating": 3.9,
+      "review": 345
+    },
+    {
+      "id": 93,
+      "category": "women",
+      "subCate": "Sweatshirts & Hoodies",
+      "name": "Versertaile Bright Jacket",
+      "brand": "Kica",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/2/6/tr:w-480,/26f9f04MKICAX00002403_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/6/26f9f04MKICAX00002403_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/6/26f9f04MKICAX00002403_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/2/6/26f9f04MKICAX00002403_5.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 770,
+      "oldPrice": 1400,
+      "rating": 2.5,
+      "review": 73
+    },
+    {
+      "id": 94,
+      "category": "women",
+      "subCate": "Sweatshirts & Hoodies",
+      "name": "Shadow Grey Stripe Oversized Hoodie",
+      "brand": "Cava Athleisure",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/e/tr:w-480,/4e0b684Cava-Athleisure-VIV-Hoodie33_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/4/e/4e0b684Cava-Athleisure-VIV-Hoodie33_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/4/e/4e0b684Cava-Athleisure-VIV-Hoodie33_5.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/4/e/4e0b684Cava-Athleisure-VIV-Hoodie33_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 1600,
+      "oldPrice": 1999,
+      "rating": 2.8,
+      "review": 456
+    },
+    {
+      "id": 95,
+      "category": "women",
+      "subCate": "Sweatshirts & Hoodies",
+      "name": "Black Casual Women Sweatshirt",
+      "brand": "Adidas Originals",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/1/c/tr:w-480,/1c93afdIB7396_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/1/c/1c93afdIB7396_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/1/c/1c93afdIB7396_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/1/c/1c93afdIB7396_5.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 3920,
+      "oldPrice": 5599,
+      "rating": 3.4,
+      "review": 283
+    },
+    {
+      "id": 96,
+      "category": "women",
+      "subCate": "Sweatshirts & Hoodies",
+      "name": "Vivir Chocolate Stripe Hoodie",
+      "brand": "Cava Athleisure",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/d/0/tr:w-480,/d0c1684Cava-Athleisure-VIV-Hoodie32_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/0/d0c1684Cava-Athleisure-VIV-Hoodie32_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/0/d0c1684Cava-Athleisure-VIV-Hoodie32_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/0/d0c1684Cava-Athleisure-VIV-Hoodie32_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 1600,
+      "oldPrice": 1999,
+      "rating": 3.2,
+      "review": 167
+    },
+    {
+      "id": 97,
+      "category": "women",
+      "subCate": "Gowns",
+      "name": "Red Floral Printed Maxi Dress",
+      "brand": "The Vanca",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/e/8/tr:w-480,/e8781d6TheVanca-DRF502631_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/8/e8781d6TheVanca-DRF502631_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/8/e8781d6TheVanca-DRF502631_5.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/e/8/e8781d6TheVanca-DRF502631_3.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 1288,
+      "oldPrice": 2799,
+      "rating": 4.1,
+      "review": 128
+    },
+    {
+      "id": 98,
+      "category": "women",
+      "subCate": "Gowns",
+      "name": "Slime Green Backless Dress",
+      "brand": "ORDINAREE",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/8/5/tr:w-480,/85676b1ORN003_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/8/5/85676b1ORN003_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/8/5/85676b1ORN003_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/8/5/85676b1ORN003_6.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 5185,
+      "oldPrice": 6100,
+      "rating": 3.5,
+      "review": 11
+    },
+    {
+      "id": 99,
+      "category": "women",
+      "subCate": "Gowns",
+      "name": "Orange Floral Smocked Tired Midi Dress",
+      "brand": "Femella",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/0/b/tr:w-480,/0be0b99FF-4185-ORG_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/0/b/0be0b99FF-4185-ORG_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/0/b/0be0b99FF-4185-ORG_4.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/0/b/0be0b99FF-4185-ORG_5.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 3325,
+      "oldPrice": 3499,
+      "rating": 4.1,
+      "review": 347
+    },
+    {
+      "id": 100,
+      "category": "women",
+      "subCate": "Gowns",
+      "name": "Magenta Cotton Balloon Sleeve Midi Dress",
+      "brand": "Swish Boss",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/d/e/tr:w-480,/de44efbZSWISH00000530_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/e/de44efbZSWISH00000530_3.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/e/de44efbZSWISH00000530_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/d/e/de44efbZSWISH00000530_4.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 3999,
+      "oldPrice": 3999,
+      "rating": 3.4,
+      "review": 238
+    },
+    {
+      "id": 101,
+      "category": "women",
+      "subCate": "Gowns",
+      "name": "Aden Chiffon Long Dress",
+      "brand": "ORDINAREE",
+      "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/5/e/tr:w-480,/5e5b6b1ORN014_1.jpg?rnd=20200526195200",
+      "images": [
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/5/e/5e5b6b1ORN014_2.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/5/e/5e5b6b1ORN014_5.jpg?rnd=20200526195200",
+        "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-160,/pub/media/catalog/product/5/e/5e5b6b1ORN014_4.jpg?rnd=20200526195200"
+      ],
+      "newPrice": 5780,
+      "oldPrice": 6800,
+      "rating": 3.9,
+      "review": 412
     }
   ]
 }

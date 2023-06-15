@@ -14,6 +14,8 @@ Dribble Link : https://dribbble.com/shots/18494892-Foggy-Clothing-ecommerce-Land
 
 - Redux / React-Redux / Thunk : npm i redux react-redux redux-thunk
 
+- Reduxjs/toolkit
+
 ### ------------- Styling Libraries --------------
 
 - Chakra UI : npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion

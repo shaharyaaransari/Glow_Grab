@@ -1,3 +1,4 @@
+import { getUniqueSubCates } from "../../Functions/GetSubCate";
 import {
   GetRequestLoading,
   GetRequestError,
@@ -14,6 +15,7 @@ const initState = {
   isLoading: false,
   isError: false,
   products: [],
+  categories: [],
 };
 
 export const reducer = (state = initState, { type, payload }: any) => {
@@ -33,10 +35,13 @@ export const reducer = (state = initState, { type, payload }: any) => {
       };
     }
     case GetRequestSuccess: {
+      let Cate = getUniqueSubCates(payload);
+
       return {
         ...state,
         isLoading: false,
         products: payload,
+        categories: Cate,
       };
     }
     default: {

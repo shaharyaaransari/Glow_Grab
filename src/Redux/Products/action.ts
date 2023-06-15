@@ -8,6 +8,7 @@ import {
   GetRequestSuccess,
 } from "./actionTypes";
 
+// Action Object Functions
 const setLoadingGetRequest = (): Action => {
   return { type: GetRequestLoading };
 };
@@ -18,6 +19,7 @@ const setSuccessGetRequest = (payload: any): Action => {
   return { type: GetRequestSuccess, payload };
 };
 
+// Get Request Function
 export const getData = (url: string, dispatch: Dispatch) => {
   dispatch(setLoadingGetRequest());
   axios({

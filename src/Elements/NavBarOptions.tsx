@@ -11,24 +11,15 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 import { ImSearch } from "react-icons/im";
-import { GrClose } from "react-icons/gr";
+import { AiOutlineClose } from "react-icons/ai";
+import NavBarSearch from "./NavBarSearch";
 
 // Styles Components
 import * as css from "../Styles/NavBarStyles";
 import { LinksAndSearchOuter } from "../Styles/NavBarStyles";
 
-type obj = {
-  isActive: boolean;
-};
-
 const NavBarOptions = () => {
   const [showSearchBox, setShowSearchBox] = useState(false);
-  const activeColor = useColorModeValue("red", "red"); // Adjust the active color
-  const inactiveColor = useColorModeValue("blue", "blue"); // Adjust the inactive color
-
-  const handleSearchVisiblilty = (type: string) => {
-    setShowSearchBox((prev) => (type == "open" ? true : false));
-  };
 
   return !showSearchBox ? (
     <LinksAndSearchOuter>
@@ -46,21 +37,13 @@ const NavBarOptions = () => {
       </Text>
 
       <Image
-        onClick={() => handleSearchVisiblilty("open")}
+        onClick={() => setShowSearchBox(true)}
         css={css.SearchIconCss}
         as={ImSearch}
       />
     </LinksAndSearchOuter>
   ) : (
-    <InputGroup>
-      <InputLeftElement>
-        <ImSearch />
-      </InputLeftElement>
-      <Input type="text" placeholder="Search Men, Women, Kids & Sneakers" />
-      <InputRightElement onClick={() => handleSearchVisiblilty("close")}>
-        <GrClose />
-      </InputRightElement>
-    </InputGroup>
+    <NavBarSearch setShowSearchBox={setShowSearchBox} />
   );
 };
 

@@ -32,7 +32,7 @@ const LogoCont = css`
 const TextCss = css`
   font-family: K2D;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 28px;
   color: white;
 
   @media (max-width: 800px) {

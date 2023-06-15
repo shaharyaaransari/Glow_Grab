@@ -10,8 +10,80 @@ export const ProductsCont = styled.div`
   font-family: Inter;
 
   @media (max-width: 800px) {
+    padding-top: 50px;
   }
   @media (max-width: 480px) {
+    padding-top: 40px;
+  }
+`;
+
+// Filter And Product Container
+export const ProductAndFilterCont = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 40px;
+  }
+`;
+
+// Filter Css
+export const FilterCont = styled.div`
+  @media (max-width: 800px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 40px;
+  }
+`;
+export const CategoryTextAndResetBtnCont = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    color: red;
+  }
+
+  button {
+    color: green;
+  }
+
+  @media (max-width: 800px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 40px;
+  }
+`;
+export const CheckBoxContainer = css`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (max-width: 800px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 40px;
+  }
+`;
+
+// Product List Css
+export const ProductListCont = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+
+  @media (max-width: 800px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 40px;
   }
 `;
 

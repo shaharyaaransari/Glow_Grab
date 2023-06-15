@@ -7,6 +7,7 @@ import {
   GetRequestError,
   GetRequestSuccess,
 } from "./actionTypes";
+import { FilterDataType } from "../../Functions/FilterDataType";
 
 // Action Object Functions
 const setLoadingGetRequest = (): Action => {
@@ -20,7 +21,7 @@ const setSuccessGetRequest = (payload: any): Action => {
 };
 
 // Get Request Function
-export const getData = (url: string, dispatch: Dispatch) => {
+export const getData = (url: string, type: any, dispatch: Dispatch) => {
   dispatch(setLoadingGetRequest());
   axios({
     method: "get",
@@ -28,7 +29,8 @@ export const getData = (url: string, dispatch: Dispatch) => {
   })
     .then((res) => {
       // console.log(res.data);
-      dispatch(setSuccessGetRequest(res.data));
+      const data = FilterDataType(res.data, type);
+      dispatch(setSuccessGetRequest(data));
     })
     .catch((err) => {
       console.log(err);

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Logo = () => {
   const HighLightStyles = {
-    color: "#2e2b74",
+    color: "#d7d6fd",
   };
 
   return (
@@ -33,6 +33,7 @@ const TextCss = css`
   font-family: K2D;
   font-weight: 600;
   font-size: 24px;
+  color: white;
 
   @media (max-width: 800px) {
   }

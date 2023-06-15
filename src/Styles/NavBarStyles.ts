@@ -3,9 +3,13 @@ import { css } from "@emotion/react";
 
 export const NavBarOuter = styled.div`
   width: 100%;
+  background: rgb(44, 44, 46);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  color: rgb(189, 191, 193);
   padding: 0px 40px;
 
   @media (max-width: 800px) {
@@ -19,6 +23,8 @@ export const LinksAndSearchOuter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: Inter;
+  width: 360px;
 
   @media (max-width: 800px) {
   }
@@ -29,6 +35,11 @@ export const LinksCss = css`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: rgb(189, 191, 193);
+
+  :hover {
+    color: white;
+  }
 
   @media (max-width: 800px) {
   }

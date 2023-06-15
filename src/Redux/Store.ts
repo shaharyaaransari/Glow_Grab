@@ -3,7 +3,8 @@ import thunk from "redux-thunk";
 
 // Reducers ******************
 import { API_URL } from "./Products/reducer";
+import { reducer as ProductReducer } from "../Redux/Products/reducer";
 
 // Store *********************
-const rootReducer = combineReducers({ API_URL });
+const rootReducer = combineReducers({ API_URL, ProductReducer });
 export const store = legacy_createStore(rootReducer, applyMiddleware(thunk));

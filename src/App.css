@@ -1,3 +1,13 @@
 .App {
   background: rgba(44, 44, 46, 0.647);
 }
+
+/* Following Properties Have Been Used as Css */
+#CommonCss {
+  background: rgb(44, 44, 46);
+  color: rgb(189, 191, 193);
+  font-family: Inter;
+  padding-top: 60px;
+  padding-top: 50px;
+  padding-top: 40px;
+}

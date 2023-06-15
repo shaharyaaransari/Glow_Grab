@@ -1,7 +1,8 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 const ProductPage = () => {
-  return <div>ProductPage</div>;
+  return <div>Product Page</div>;
 };
 
 export default ProductPage;

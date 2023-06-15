@@ -26,6 +26,8 @@ const LogoCont = css`
 
   @media (max-width: 800px) {
   }
+  @media (max-width: 600px) {
+  }
   @media (max-width: 480px) {
   }
 `;
@@ -36,7 +38,13 @@ const TextCss = css`
   color: white;
 
   @media (max-width: 800px) {
+    font-size: 22px;
+  }
+  @media (max-width: 600px) {
+    font-size: 22px;
   }
   @media (max-width: 480px) {
+    font-size: 18px;
+    display: flex;
   }
 `;

@@ -1,5 +1,7 @@
 # Glam Grab
 
+Repo Link : https://github.com/shaharyaaransari/quite-trade-54
+
 Dribble Link : https://dribbble.com/shots/18494892-Foggy-Clothing-ecommerce-Landing-Page
 
 ## Every Npm Package Installed :-

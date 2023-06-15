@@ -1,5 +1,4 @@
 import "./App.css";
-import { useContext, useState } from "react";
 import AllRoutes from "./Routes/AllRoutes";
 import Navbar from "./Components/Navbar";
 

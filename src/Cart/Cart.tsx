@@ -17,7 +17,7 @@ import { useDispatch, useSelector } from "react-redux";
 // import { getCartData } from '../Redux/Cart/cart.action';
 // import { SingleCartPage } from '../Components/CartComponent/SingleCartPage';
 
-const Cart = () => {
+const Cart= () => {
   const dispatch = useDispatch();
   //   const { loading, error, cartItems } = useSelector(
   //     (store) => store.cartManager

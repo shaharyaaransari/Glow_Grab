@@ -5,7 +5,9 @@ import {
   Input,
   Select,
   Tabs,
+  Image,
   TabList,
+  Center,
   TabPanels,
   Tab,
   TabPanel,
@@ -14,6 +16,7 @@ import {
   MenuList,
   MenuItem,
 } from "@chakra-ui/react";
+import { MdSort } from "react-icons/md";
 
 // Styles Components
 import * as css from "../Styles/ProductPageStyles";
@@ -23,7 +26,8 @@ import {
 } from "../Styles/ProductPageStyles";
 
 const SortAndOrder = () => {
-  const [value, setValue] = useState("Relevance");
+  const [SortValue, setValue] = useState("Relevance");
+  const [OrderValue, setOrderValue] = useState("asc");
 
   const handleSelect = (selectedValue: string) => {
     setValue(selectedValue);
@@ -31,33 +35,71 @@ const SortAndOrder = () => {
 
   return (
     <SortAndOrderCont>
-      {/* <Select placeholder="Select">
-        <option value="">Relevance</option>
-        <option value="newprice">Price</option>
-        <option value="rating">Ratings</option>
-        <option value="review">Reviews</option>
-      </Select> */}
-
       <Menu>
         <MenuButton as={Box} cursor="pointer">
-          <Text>Sort by: {value}</Text>
+          <Text css={css.MenuPlaceholderCss}>
+            <MdSort />
+            Sort by : <span>{SortValue}</span>
+          </Text>
         </MenuButton>
-        <MenuList>
-          <MenuItem onClick={() => handleSelect("Relevance")}>
+        <MenuList css={css.MenusCont}>
+          <MenuItem
+            onClick={() => handleSelect("Relevance")}
+            css={
+              SortValue == "Relevance"
+                ? css.ActiveMenuItemCss
+                : css.InActiveMenuItemCss
+            }
+          >
             Relevance
           </MenuItem>
-          <MenuItem onClick={() => handleSelect("Newprice")}>Price</MenuItem>
-          <MenuItem onClick={() => handleSelect("Rating")}>Ratings</MenuItem>
-          <MenuItem onClick={() => handleSelect("Review")}>Reviews</MenuItem>
+          <MenuItem
+            onClick={() => handleSelect("Price")}
+            css={
+              SortValue == "Price"
+                ? css.ActiveMenuItemCss
+                : css.InActiveMenuItemCss
+            }
+          >
+            Price
+          </MenuItem>
+          <MenuItem
+            onClick={() => handleSelect("Rating")}
+            css={
+              SortValue == "Rating"
+                ? css.ActiveMenuItemCss
+                : css.InActiveMenuItemCss
+            }
+          >
+            Ratings
+          </MenuItem>
+          <MenuItem
+            onClick={() => handleSelect("Reviews")}
+            css={
+              SortValue == "Reviews"
+                ? css.ActiveMenuItemCss
+                : css.InActiveMenuItemCss
+            }
+          >
+            Reviews
+          </MenuItem>
         </MenuList>
       </Menu>
 
-      <Tabs variant="soft-rounded" colorScheme="green">
-        <TabList>
-          <Tab>Low - High</Tab>
-          <Tab>High - Low</Tab>
-        </TabList>
-      </Tabs>
+      <Box css={css.OrderCont}>
+        <Center
+          onClick={() => setOrderValue("asc")}
+          css={OrderValue == "asc" ? css.ActiveOrderCss : css.InActiveOrderCss}
+        >
+          Low — High
+        </Center>
+        <Center
+          onClick={() => setOrderValue("desc")}
+          css={OrderValue == "desc" ? css.ActiveOrderCss : css.InActiveOrderCss}
+        >
+          High — Low
+        </Center>
+      </Box>
     </SortAndOrderCont>
   );
 };

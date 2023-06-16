@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Button, Checkbox, CheckboxGroup, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Center,
+  Checkbox,
+  CheckboxGroup,
+  Text,
+} from "@chakra-ui/react";
 
 // Styles Import
 import * as css from "../Styles/ProductPageStyles";
@@ -13,11 +20,16 @@ const Filter = ({ CategoriesArray }: FilterTypes) => {
     <FilterCont>
       <CategoryTextAndResetBtnCont>
         <Text>Categories :</Text>
-        <Button>Reset</Button>
+        <Center>Clear</Center>
       </CategoryTextAndResetBtnCont>
       <Box css={css.CheckBoxContainer}>
         {CategoriesArray.map((item, ind) => (
-          <Checkbox key={item} colorScheme="red" defaultChecked>
+          <Checkbox
+            css={css.CheckBoxInputCss}
+            key={item}
+            colorScheme="teal"
+            defaultChecked
+          >
             {item}
           </Checkbox>
         ))}

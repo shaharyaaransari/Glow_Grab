@@ -3,14 +3,9 @@ import { css } from "@emotion/react";
 
 export const OuterBox = css`
   position: fixed;
-  bottom: 0;
-  /* width: 100%; */
-  color: #ffffff;
-  border-radius: 8px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
 
   @media (max-width: 800px) {
   }
@@ -18,12 +13,23 @@ export const OuterBox = css`
   @media (max-width: 480px) {
   }
 `;
+export const InnerCont = styled.div`
+  width: 370px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+  }
+  @media (max-width: 480px) {
+  }
+`;
 export const PagesCont = css`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 228px;
-
+  width: 200px;
   border-radius: 8px;
   text-align: center;
 
@@ -39,18 +45,17 @@ export const PageDisplayCont = css`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 8px;
-  background: #000000;
-  border: 1px solid #00ff0a;
+  border-radius: 5px;
+  backdrop-filter: blur(15px);
+  background: rgba(66, 66, 75, 0.823);
   text-align: center;
-  width: 105px;
+  width: 100px;
   font-family: Inter;
-  height: 39px;
+  height: 35px;
   padding: 0px 15px 0px 15px;
 
   @media (max-width: 800px) {
   }
-
   @media (max-width: 480px) {
     border-radius: 5px;
     width: 85px;
@@ -60,20 +65,20 @@ export const PageDisplayCont = css`
   }
 `;
 export const NextPrevBtn = css`
-  color: white;
-  background: #000000;
-  border: 1px solid #00ff0a;
-  border-radius: 10px;
+  color: rgb(203, 215, 227);
   text-align: center;
+  border-radius: 5px;
+  backdrop-filter: blur(15px);
+  background: rgba(66, 66, 75, 0.823);
+  height: 35px;
+  width: 10px;
 
   :hover {
-    background: #000000;
-    border: 1px solid #faff00;
+    background: rgba(66, 66, 75, 0.867);
   }
 
   @media (max-width: 800px) {
   }
-
   @media (max-width: 480px) {
     border-radius: 6px;
     width: 10px;
@@ -89,13 +94,17 @@ export const ArrowIconsCss = css`
     font-size: 14px;
   }
 `;
+
+// Go To Css
 export const GoToCont = css`
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 120px;
-  margin-left: 15px;
+  width: 115px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: lighter;
 
   @media (max-width: 800px) {
   }
@@ -110,16 +119,17 @@ export const GoToBtn = css`
   color: white;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-  background: #000000;
-  border: 1px solid #00ff0a;
   font-family: Inter;
+  color: rgb(229, 227, 227);
   width: 150px;
-
+  height: 35px;
+  /* border-radius: 5px; */
+  backdrop-filter: blur(15px);
+  background: rgba(66, 66, 75, 0.823);
   text-align: center;
 
   :hover {
-    background: #000000;
-    border: 1px solid #faff00;
+    background: rgba(66, 66, 75, 0.867);
   }
 
   @media (max-width: 800px) {
@@ -132,15 +142,22 @@ export const GoToBtn = css`
 `;
 export const GoToInput = css`
   color: white;
-  background: #000000;
-  border: 1px solid #00ff0a;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   text-align: center;
+  height: 36px;
+  /* border-radius: 5px; */
+  backdrop-filter: blur(15px);
+  background: rgba(66, 66, 75, 0.823);
+  font-size: 16px;
+  color: rgb(203, 215, 227);
 
   &:focus {
-    background: #000000;
-    border: 1px solid #faff00;
+    backdrop-filter: blur(15px);
+    background: rgba(66, 66, 75, 0.823);
+    outline: none;
+    border: none;
+    box-shadow: none;
   }
 
   @media (max-width: 800px) {
@@ -153,18 +170,31 @@ export const GoToInput = css`
 `;
 export const GoToInputEmpty = css`
   color: white;
-  background: #000000;
-  border: 1px solid #00ff0a;
-  border-radius: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgb(158, 160, 162);
   text-align: center;
+  border-radius: 5px;
+  backdrop-filter: blur(15px);
+  background: rgba(66, 66, 75, 0.823);
+  height: 36px;
 
-  &:focus {
-    background: #000000;
-    border: 1px solid #faff00;
+  :focus {
+    border-radius: 5px;
+    backdrop-filter: blur(15px);
+    background: rgba(66, 66, 75, 0.823);
+    outline: none;
+    border: none;
+    box-shadow: none;
   }
+
+  ::placeholder {
+    color: rgb(203, 215, 227);
+    font-size: 14px;
+  }
+
   :hover {
-    background: #000000;
-    border: 1px solid #faff00;
+    background: rgba(66, 66, 75, 0.867);
   }
 
   @media (max-width: 800px) {
@@ -173,20 +203,6 @@ export const GoToInputEmpty = css`
   @media (max-width: 480px) {
     font-size: 14px;
     height: 22px;
-  }
-`;
-export const Ntn = css`
-  color: white;
-  background: #000000;
-  border: 1px solid #00ff0a;
-  border-radius: 24px;
-  text-align: center;
-  margin: auto;
-
-  @media (max-width: 800px) {
-  }
-
-  @media (max-width: 480px) {
   }
 `;
 

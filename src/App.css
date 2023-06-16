@@ -7,10 +7,13 @@
   background: rgb(44, 44, 46);
   background: rgba(66, 66, 75, 0.407);
   color: rgb(158, 160, 162);
+  color: rgb(186, 255, 227);
   font-family: Inter;
   padding-top: 60px;
+  background-color: rgba(66, 66, 75, 0.938);
   padding-top: 50px;
   padding-top: 40px;
+  color: rgba(245, 245, 245, 0.625);
 
   :hover {
     border: 1px solid rgb(203, 215, 227);

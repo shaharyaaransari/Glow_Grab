@@ -14,7 +14,7 @@ Dribble Link : https://dribbble.com/shots/18494892-Foggy-Clothing-ecommerce-Land
 
 - Redux / React-Redux / Thunk : npm i redux react-redux redux-thunk
 
-- Reduxjs/toolkit
+- Redux Toolkit : npm install @reduxjs/toolkit
 
  - npm i --save-dev @types/react-slick for slider 
   - npm install slick-carousel

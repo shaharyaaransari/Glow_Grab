@@ -3,6 +3,7 @@ import styled from "styled-components";
 import shoes from "../images/shoes.png";
 import Men from "../images/Men.png";
 import Woman from "../images/woman.png";
+
 import hoodies1 from "../images/tilt1.webp"
 import hoodies2 from "../images/tilt2.webp"
 import hoodies3 from "../images/tilt4.webp"

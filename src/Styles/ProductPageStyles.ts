@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import { css } from "@emotion/react";
 
-export const ProductsCont = styled.div`
+// Filter And Product Container
+export const ProductAndFilterCont = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 700px;
   width: 100%;
   padding-top: 60px;
@@ -17,27 +21,11 @@ export const ProductsCont = styled.div`
   }
 `;
 
-// Filter And Product Container
-export const ProductAndFilterCont = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-
-  @media (max-width: 800px) {
-    padding-top: 50px;
-  }
-  @media (max-width: 480px) {
-    padding-top: 40px;
-  }
-`;
-
 // Filter Css
 export const FilterCont = styled.div`
   @media (max-width: 800px) {
-    padding-top: 50px;
   }
   @media (max-width: 480px) {
-    padding-top: 40px;
   }
 `;
 export const CategoryTextAndResetBtnCont = styled.div`
@@ -54,10 +42,8 @@ export const CategoryTextAndResetBtnCont = styled.div`
   }
 
   @media (max-width: 800px) {
-    padding-top: 50px;
   }
   @media (max-width: 480px) {
-    padding-top: 40px;
   }
 `;
 export const CheckBoxContainer = css`
@@ -66,24 +52,32 @@ export const CheckBoxContainer = css`
   gap: 15px;
 
   @media (max-width: 800px) {
-    padding-top: 50px;
   }
   @media (max-width: 480px) {
-    padding-top: 40px;
+  }
+`;
+
+// Sort And Order Css
+export const SortAndOrderCont = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+  }
+  @media (max-width: 480px) {
   }
 `;
 
 // Product List Css
 export const ProductListCont = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 
   @media (max-width: 800px) {
-    padding-top: 50px;
   }
   @media (max-width: 480px) {
-    padding-top: 40px;
   }
 `;
 

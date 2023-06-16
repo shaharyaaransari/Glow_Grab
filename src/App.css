@@ -5,9 +5,21 @@
 /* Following Properties Have Been Used as Css */
 #CommonCss {
   background: rgb(44, 44, 46);
-  color: rgb(189, 191, 193);
+  background: rgb(61, 61, 72);
+  color: rgb(158, 160, 162);
   font-family: Inter;
   padding-top: 60px;
   padding-top: 50px;
   padding-top: 40px;
+
+  :hover {
+    border: 1px solid rgb(203, 215, 227);
+    color: rgb(203, 215, 227);
+    border: rgb(229, 227, 227);
+  }
+}
+
+/* For Test Purpose */
+#Test {
+  color: rgb(164, 164, 164);
 }

@@ -7,17 +7,14 @@ import { useParams } from "react-router-dom";
 // Files Import
 import { FilterDataType } from "../Functions/FilterDataType";
 import { getData } from "../Redux/Products/action";
-import Pagination from "../Components/Pagination";
 import Filter from "../Components/Filter";
 import ProductsList from "../Components/ProductsList";
 import SortAndOrder from "../Components/SortAndOrder";
+import Pagination from "../Components/Pagination";
 
 // Styles Components
 import * as css from "../Styles/ProductPageStyles";
-import {
-  ProductsCont,
-  ProductAndFilterCont,
-} from "../Styles/ProductPageStyles";
+import { ProductAndFilterCont } from "../Styles/ProductPageStyles";
 
 const ProductPage = () => {
   const dispatch = useDispatch();
@@ -35,17 +32,14 @@ const ProductPage = () => {
   }, [type]);
 
   return (
-    <ProductsCont>
-      <ProductAndFilterCont>
-        <Filter CategoriesArray={CategoriesArray} />
-        <Box>
-          <SortAndOrder />
-          <ProductsList Products={Products} />
-        </Box>
-      </ProductAndFilterCont>
-
-      <Pagination />
-    </ProductsCont>
+    <ProductAndFilterCont>
+      <Filter CategoriesArray={CategoriesArray} />
+      <Box>
+        <SortAndOrder />
+        <ProductsList Products={Products} />
+        <Pagination />
+      </Box>
+    </ProductAndFilterCont>
   );
 };
 

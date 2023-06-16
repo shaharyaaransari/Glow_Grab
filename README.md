@@ -16,6 +16,10 @@ Dribble Link : https://dribbble.com/shots/18494892-Foggy-Clothing-ecommerce-Land
 
 - Reduxjs/toolkit
 
+ - npm i --save-dev @types/react-slick for slider 
+  - npm install slick-carousel
+
+
 ### ------------- Styling Libraries --------------
 
 - Chakra UI : npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion

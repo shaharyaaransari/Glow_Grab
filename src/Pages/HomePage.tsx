@@ -6,7 +6,9 @@ import Woman from "../images/woman.png";
 import hoodies1 from "../images/tilt1.webp"
 import hoodies2 from "../images/tilt2.webp"
 import hoodies3 from "../images/tilt4.webp"
+ import groupPic from "../images/group.png"
 import { Link } from "react-router-dom";
+import ProductSlider from "../Elements/Sliders";
 const HomePage = () => {
   return (
     <DIV>
@@ -33,6 +35,7 @@ const HomePage = () => {
         <h1>U</h1>
         <h1>C</h1>
         <h1>T</h1>
+        <h1>S</h1>
       </div>
       <div className="space-conatiner">
         <div>
@@ -79,8 +82,33 @@ const HomePage = () => {
         <h1>S</h1>
         <h1>S</h1>
         <h1>T</h1>
-
       </div>
+      <div className="containers">
+        <h1>For your esstentails style. </h1>
+        <p>Beyond the frame of uniform in the new normal era. wear your own appearance and will,no matter the situation or the difficult. </p>
+        <ProductSlider/>
+        <div className="style-word">
+  <p className="li">New exciting drops </p>
+  <p className="li">coming following month.</p>
+ </div>
+ <div  className="main-container">
+   <div className="paragraph">
+     <h1>Subscribe to the newsletter</h1>
+      <p>There is always new drops comings.These products are very premium and limited.If you want to put your hands on the forms first,subscribes to our newsletter.</p>
+   </div>
+   <div className="paragraph">
+     <h1>New arrivals in every two months</h1>
+     <p>There is always new drops cominggs in every two months. These products are very premium and limited. if you want to put your hands on them first.</p>
+   </div>
+ </div>
+   <div className="input-with-logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_DQMf_nk3wuK7BKq0TrFIHbZFALMNfgr8XT1TteGKrw&usqp=CAU&ec=48600112" alt="Logo" className="logo" />
+     <input type="text" placeholder="name@gmail.com" className="input-logo"/>
+      
+   </div>
+     <img src={groupPic} alt="group-pic" className="group-pic"/>
+</div>
+
     </DIV>
   );
 };
@@ -134,8 +162,8 @@ const DIV = styled.div`
 
   .product-style {
     display: flex;
-    
-    border: 1 px solid;
+     margin: 15px;
+    border: 1px solid #dae23b;
     padding: 0px 15px;
     background-color: #131212;
     justify-content: space-between;
@@ -189,7 +217,9 @@ const DIV = styled.div`
 .space-conatiner{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  margin: 20px;
+  margin: 30px;
+   padding: 20px;
+  
   justify-content: space-between;
 }
  .browse{
@@ -208,11 +238,64 @@ const DIV = styled.div`
   .est-style h1 {
     font-size: 200px;
     color: #131212;
-  
     background-color: #131212;
     text-shadow: -1px -1px 0 #d1481b, 1px -1px 0#d1481b, -1px 1px 0 #d1481b,
       1px 1px 0 #d1481b;
   }
+   .style-word .li{
+    font-size: 50px;
+    width: 45%;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0#000000, -1px 1px 0 #000000,
+      1px 1px 0 #000000;
+   }
+   .paragraph{
+    width: 440px;
+    background-color: #FEFDE3;
+    margin: 10px;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   }
+   .paragraph h1{
+      font-size: 25px;
+   }
+   .main-container{
+    display: flex;
+    margin-left: 3em;
+     width: 70%;
+     justify-content: space-between;
+   }
+   .input-with-logo {
+  position: relative;
+    width: 400px;
+    margin-right: 969px;
+  display: inline-block;
+   margin-top: 20px;
+}
+
+.input-with-logo .logo {
+  position: absolute;
+  right: 5px; /* Adjust this value to align the logo as per your preference */
+  top: 50%;
+  
+  width: 20px;
+  transform: translateY(-50%);
+}
+.input-logo{
+  height: 50px;
+
+  width: 400px;
+}
+.input-with-logo input {
+  padding-left: 30px; /* Adjust this value based on the logo's size */
+}
+
+.group-pic{
+ 
+  margin-top: 10px;
+   width: 100%;
+}
+
  @media (max-width: 800px) {
     .image-handle {
       display: grid;
@@ -249,7 +332,27 @@ const DIV = styled.div`
  .strokeme{
   margin-left: 6em;
  }
+ .main-container{
+  display: grid;
+  grid-template-columns: repeat(1,fr);
+ }
   }
+   .containers{
+    padding: 10px;
+      background-color: #E0E0E0;
+   }
+   .containers p{
+    margin-left: 30px;
+      text-align: left;
+    text-align: left;
+   }
+    .containers h1{
+      width: 500px;
+      margin-left: 30px;
+      text-align: left; 
+      font-weight: 600;
+      color: #000;
+    } 
    
   
 `;

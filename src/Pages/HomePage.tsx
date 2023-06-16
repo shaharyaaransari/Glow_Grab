@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import shoes from "../Images/shoes.png";
-import Men from "../Images/Men.png";
-import Woman from "../Images/woman.png";
+import shoes from "../images/shoes.png";
+import Men from "../images/Men.png";
+import Woman from "../images/woman.png";
 
 const HomePage = () => {
   return (

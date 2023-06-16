@@ -206,18 +206,6 @@ export const InActiveOrderCss = css`
   }
 `;
 
-// Product List Css
-export const ProductListCont = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-
-  @media (max-width: 800px) {
-  }
-  @media (max-width: 480px) {
-  }
-`;
-
 /* Css Template
 
 export const A = css`

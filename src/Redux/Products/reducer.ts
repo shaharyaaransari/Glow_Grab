@@ -14,11 +14,15 @@ export const API_URL = () => {
 const initState = {
   isLoading: false,
   isError: false,
+  totalPages: 0,
   products: [],
   categories: [],
 };
 
-export const reducer = (state = initState, { type, payload }: any) => {
+export const reducer = (
+  state = initState,
+  { type, payload, totalPages }: any
+) => {
   switch (type) {
     case GetRequestLoading: {
       return {
@@ -42,6 +46,7 @@ export const reducer = (state = initState, { type, payload }: any) => {
         isLoading: false,
         products: payload,
         categories: Cate,
+        totalPages: totalPages,
       };
     }
     default: {

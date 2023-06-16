@@ -7,21 +7,20 @@ import {
   GetRequestError,
   GetRequestSuccess,
 } from "./actionTypes";
-import { FilterDataType } from "../../Functions/FilterDataType";
 
 // Action Object Functions
-const setLoadingGetRequest = (): Action => {
+const setLoadingGetRequest = () => {
   return { type: GetRequestLoading };
 };
-const setErrorGetRequest = (): Action => {
+const setErrorGetRequest = () => {
   return { type: GetRequestError };
 };
-const setSuccessGetRequest = (payload: any): Action => {
-  return { type: GetRequestSuccess, payload };
+const setSuccessGetRequest = (payload: any, totalPages: number) => {
+  return { type: GetRequestSuccess, payload, totalPages };
 };
 
 // Get Request Function
-export const getData = (url: string, type: any, dispatch: Dispatch) => {
+export const getData = (url: string, dispatch: Dispatch) => {
   dispatch(setLoadingGetRequest());
   axios({
     method: "get",
@@ -29,8 +28,9 @@ export const getData = (url: string, type: any, dispatch: Dispatch) => {
   })
     .then((res) => {
       // console.log(res.data);
-      const data = FilterDataType(res.data, type);
-      dispatch(setSuccessGetRequest(data));
+
+      const totalPages = res.headers["x-total-count"];
+      dispatch(setSuccessGetRequest(res.data, totalPages));
     })
     .catch((err) => {
       console.log(err);

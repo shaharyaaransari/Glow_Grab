@@ -1,0 +1,107 @@
+import React, { useEffect, useState } from "react";
+import {
+  Box,
+  Text,
+  Input,
+  Select,
+  Tabs,
+  Image,
+  TabList,
+  Center,
+  TabPanels,
+  Tab,
+  TabPanel,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+} from "@chakra-ui/react";
+import { MdSort } from "react-icons/md";
+
+// Styles Components
+import * as css from "../Styles/ProductPageStyles";
+import {
+  SortAndOrderCont,
+  ProductAndFilterCont,
+} from "../Styles/ProductPageStyles";
+
+const SortAndOrder = () => {
+  const [SortValue, setValue] = useState("Relevance");
+  const [OrderValue, setOrderValue] = useState("asc");
+
+  const handleSelect = (selectedValue: string) => {
+    setValue(selectedValue);
+  };
+
+  return (
+    <SortAndOrderCont>
+      <Menu>
+        <MenuButton as={Box} cursor="pointer">
+          <Text css={css.MenuPlaceholderCss}>
+            <MdSort />
+            Sort by : <span>{SortValue}</span>
+          </Text>
+        </MenuButton>
+        <MenuList css={css.MenusCont}>
+          <MenuItem
+            onClick={() => handleSelect("Relevance")}
+            css={
+              SortValue == "Relevance"
+                ? css.ActiveMenuItemCss
+                : css.InActiveMenuItemCss
+            }
+          >
+            Relevance
+          </MenuItem>
+          <MenuItem
+            onClick={() => handleSelect("Price")}
+            css={
+              SortValue == "Price"
+                ? css.ActiveMenuItemCss
+                : css.InActiveMenuItemCss
+            }
+          >
+            Price
+          </MenuItem>
+          <MenuItem
+            onClick={() => handleSelect("Rating")}
+            css={
+              SortValue == "Rating"
+                ? css.ActiveMenuItemCss
+                : css.InActiveMenuItemCss
+            }
+          >
+            Ratings
+          </MenuItem>
+          <MenuItem
+            onClick={() => handleSelect("Reviews")}
+            css={
+              SortValue == "Reviews"
+                ? css.ActiveMenuItemCss
+                : css.InActiveMenuItemCss
+            }
+          >
+            Reviews
+          </MenuItem>
+        </MenuList>
+      </Menu>
+
+      <Box css={css.OrderCont}>
+        <Center
+          onClick={() => setOrderValue("asc")}
+          css={OrderValue == "asc" ? css.ActiveOrderCss : css.InActiveOrderCss}
+        >
+          Low — High
+        </Center>
+        <Center
+          onClick={() => setOrderValue("desc")}
+          css={OrderValue == "desc" ? css.ActiveOrderCss : css.InActiveOrderCss}
+        >
+          High — Low
+        </Center>
+      </Box>
+    </SortAndOrderCont>
+  );
+};
+
+export default SortAndOrder;

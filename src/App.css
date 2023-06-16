@@ -1,2 +1,25 @@
 .App {
+  background: rgba(44, 44, 46, 0.647);
+}
+
+/* Following Properties Have Been Used as Css */
+#CommonCss {
+  background: rgb(44, 44, 46);
+  background: rgba(66, 66, 75, 0.407);
+  color: rgb(158, 160, 162);
+  font-family: Inter;
+  padding-top: 60px;
+  padding-top: 50px;
+  padding-top: 40px;
+
+  :hover {
+    border: 1px solid rgb(203, 215, 227);
+    color: rgb(203, 215, 227);
+    border: rgb(229, 227, 227);
+  }
+}
+
+/* For Test Purpose */
+#Test {
+  color: rgb(164, 164, 164);
 }

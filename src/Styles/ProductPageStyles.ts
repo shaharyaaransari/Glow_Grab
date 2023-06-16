@@ -22,7 +22,7 @@ export const ProductAndFilterCont = styled.div`
 
 // Filter Css
 export const FilterCont = styled.div`
-  width: 30%;
+  width: 40%;
   background: rgba(66, 66, 75, 0.407);
   display: flex;
   height: fit-content;

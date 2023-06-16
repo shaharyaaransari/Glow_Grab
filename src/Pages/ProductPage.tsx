@@ -28,7 +28,7 @@ const ProductPage = () => {
   );
 
   useEffect(() => {
-    getData(`${URL}/products`, type, dispatch);
+    getData(`${URL}/products?_page=1&_limit=9`, type, dispatch);
   }, [type]);
 
   return (

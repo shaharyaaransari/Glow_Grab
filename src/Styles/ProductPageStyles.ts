@@ -20,6 +20,15 @@ export const ProductAndFilterCont = styled.div`
   }
 `;
 
+export const RightSideDiv = css`
+  width: 150%;
+
+  @media (max-width: 800px) {
+  }
+  @media (max-width: 480px) {
+  }
+`;
+
 // Filter Css
 export const FilterCont = styled.div`
   width: 40%;

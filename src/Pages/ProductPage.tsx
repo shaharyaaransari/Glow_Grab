@@ -1,11 +1,10 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Text, Input } from "@chakra-ui/react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 
 // Files Import
-import { FilterDataType } from "../Functions/FilterDataType";
 import { getData } from "../Redux/Products/action";
 import Filter from "../Components/Filter";
 import ProductsList from "../Components/ProductsList";
@@ -22,22 +21,38 @@ const ProductPage = () => {
   const URL = useSelector((store: any) => store.API_URL);
   const isLoading = useSelector((store: any) => store.ProductReducer.isLoading);
   const isError = useSelector((store: any) => store.ProductReducer.isError);
+  const totalPages = useSelector(
+    (store: any) => store.ProductReducer.totalPages
+  );
   const Products = useSelector((store: any) => store.ProductReducer.products);
   const CategoriesArray = useSelector(
     (store: any) => store.ProductReducer.categories
   );
 
+  // States
+  const [page, setPage] = useState(1);
+  const [limit, setLimit] = useState(9);
+
   useEffect(() => {
-    getData(`${URL}/products?_page=1&_limit=9`, type, dispatch);
-  }, [type]);
+    getData(`${URL}/${type}?_page=${page}&_limit=${limit}`, dispatch);
+  }, [type, page]);
+
+  useEffect(() => {
+    setPage(1);
+  }, [type, totalPages]);
 
   return (
     <ProductAndFilterCont>
       <Filter CategoriesArray={CategoriesArray} />
-      <Box>
+      <Box css={css.RightSideDiv}>
         <SortAndOrder />
         <ProductsList Products={Products} />
-        <Pagination />
+        <Pagination
+          totalPages={totalPages}
+          page={page}
+          setPage={setPage}
+          limit={limit}
+        />
       </Box>
     </ProductAndFilterCont>
   );

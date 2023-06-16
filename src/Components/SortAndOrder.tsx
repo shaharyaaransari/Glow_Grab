@@ -86,20 +86,26 @@ const SortAndOrder = () => {
         </MenuList>
       </Menu>
 
-      <Box css={css.OrderCont}>
-        <Center
-          onClick={() => setOrderValue("asc")}
-          css={OrderValue == "asc" ? css.ActiveOrderCss : css.InActiveOrderCss}
-        >
-          Low — High
-        </Center>
-        <Center
-          onClick={() => setOrderValue("desc")}
-          css={OrderValue == "desc" ? css.ActiveOrderCss : css.InActiveOrderCss}
-        >
-          High — Low
-        </Center>
-      </Box>
+      {SortValue != "Relevance" && (
+        <Box css={css.OrderCont}>
+          <Center
+            onClick={() => setOrderValue("asc")}
+            css={
+              OrderValue == "asc" ? css.ActiveOrderCss : css.InActiveOrderCss
+            }
+          >
+            Low — High
+          </Center>
+          <Center
+            onClick={() => setOrderValue("desc")}
+            css={
+              OrderValue == "desc" ? css.ActiveOrderCss : css.InActiveOrderCss
+            }
+          >
+            High — Low
+          </Center>
+        </Box>
+      )}
     </SortAndOrderCont>
   );
 };

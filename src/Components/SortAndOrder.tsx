@@ -25,12 +25,21 @@ import {
   ProductAndFilterCont,
 } from "../Styles/ProductPageStyles";
 
-const SortAndOrder = () => {
-  const [SortValue, setValue] = useState("Relevance");
-  const [OrderValue, setOrderValue] = useState("asc");
+interface SortAndOrderType {
+  SortValue: string;
+  setSortValue: any;
+  OrderValue: string;
+  setOrderValue: any;
+}
 
+const SortAndOrder = ({
+  SortValue,
+  setSortValue,
+  OrderValue,
+  setOrderValue,
+}: SortAndOrderType) => {
   const handleSelect = (selectedValue: string) => {
-    setValue(selectedValue);
+    setSortValue(selectedValue);
   };
 
   return (

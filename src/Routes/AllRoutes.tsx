@@ -4,6 +4,7 @@ import HomePage from "../Pages/HomePage";
 import ProductPage from "../Pages/ProductPage";
 import SingleProductPage from "../Pages/SingleProductPage";
 import Cart from "../Cart/Cart";
+import LoginPage from "../Pages/LoginPage";
 
 
 
@@ -15,7 +16,7 @@ const AllRoutes = () => {
       <Route path="/products/:type" element={<ProductPage />} />
       <Route path="/product/:id" element={<SingleProductPage />} />
       <Route path="/cart" element={<Cart />} />
-
+      <Route path="/login" element={<LoginPage />} />
     </Routes>
   );
 };

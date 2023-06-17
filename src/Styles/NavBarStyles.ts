@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { css } from "@emotion/react";
 
+
 export const NavBarOuter = styled.div`
   width: 100%;
   height: 60px;

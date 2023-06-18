@@ -16,13 +16,13 @@ import { deleteItem } from "../Redux/carts/action";
 
 export const SingleCartPage = (props) => {
   const dispatch = useDispatch();
-  // const { productImage_src, trackEvent_2, id, your_price } = props;
-  // let title = trackEvent_2.split('-');
-  // let final_title = '';
-  // for (let i = 1; i < title.length; i++) {
-  //   final_title += title[i].trim() + ' ';
-  // }
-  // final_title = final_title.trim();
+  const { productImage_src, trackEvent_2, id, your_price } = props;
+  let title = trackEvent_2.split("-");
+  let final_title = "";
+  for (let i = 1; i < title.length; i++) {
+    final_title += title[i].trim() + " ";
+  }
+  final_title = final_title.trim();
 
   const handleDelete = (id) => {
     dispatch(deleteItem(id));

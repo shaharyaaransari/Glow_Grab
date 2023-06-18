@@ -22,12 +22,11 @@ import {
   ProductListCont,
   NameTag,
 } from "../Styles/ProductListStyles";
-
-import { useDispatch, useSelector } from "react-redux";
-export const ADD_PRODUCT : string = "ADD_PRODUCT"
-
 import SingleProductPage from "../Pages/SingleProductPage";
 
+import { useDispatch, useSelector } from "react-redux";
+import { AddToCart } from "../Redux/carts/action";
+export const ADD_PRODUCT: string = "ADD_PRODUCT";
 
 interface ProductsListType {
   type: any;
@@ -42,35 +41,21 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
   const navigate = useNavigate();
   const [imageLoading, setImageLoading] = useState(true);
 
- const dispatch=useDispatch()
-  const addProduct=useSelector((store:any)=>store.ProductReducer.addProduct)
-// console.log(addProduct)
- 
-   interface reducerTypes{
-    type:string;
-    payload : any;
-   }
-  const handleAddToCart = (id: number) => {
- Products.filter((el,ind)=>{
-      if(id===el.id){
-        dispatch({type:ADD_PRODUCT,payload:el})
-      
-      
-      }
-    })
-  };
-  console.log(addProduct)
+  const dispatch: any = useDispatch();
+  const addProduct = useSelector(
+    (store: any) => store.ProductReducer.addProduct
+  );
+
+  interface reducerTypes {
+    type: string;
+    payload: any;
+  }
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [showSingleProduct, setShowSingleProduct] = useState(false);
   const [SingleProductData, setSingleProductData] = useState<any>({});
 
-  const handleAddToCart = (id: number) => {};
-
-
   const handleCardClick = (item: any) => {
-    //return navigate(`/product/${type}-${item.id}`);
-    // window.open(`/product/${type}-${item.id}`, "_blank");
-    //setShowSingleProduct(true);
     setSingleProductData(item);
     onOpen();
   };
@@ -81,16 +66,10 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
         {Products.map((item, ind) => (
           <Box
             onClick={() => handleCardClick(item)}
-            key={item.id}
+            key={item.id + item.name}
             css={css.CardOuter}
           >
-            <Box
-
-            // as={NavLink}
-            // to={`/product/${type}-${item.id}`}
-            // target="_blank"
-            >
-              {/* <Text>{item.id}</Text> */}
+            <Box>
               {imageLoading && <h1>Loading</h1>}
 
               <Image
@@ -120,24 +99,17 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
                 <Text css={css.ReviewCss}>Based on {item.review} reviews</Text>
               </Box>
             </Box>
-            {/* <Box
-              onClick={() => handleAddToCart(item.id)}
-              css={css.AddToCartButton}
-            >
-              Add to Cart
-            </Box> */}
           </Box>
         ))}
       </ProductListCont>
+
       {/* SingleProduct Modal */}
-      {/* {showSingleProduct && ( */}
       <SingleProductPage
         isOpen={isOpen}
         onOpen={onOpen}
         onClose={onClose}
         SingleProductData={SingleProductData}
       />
-      {/* )} */}
     </ProductListOuter>
   );
 };

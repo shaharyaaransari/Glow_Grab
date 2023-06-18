@@ -55,7 +55,6 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
   const [showSingleProduct, setShowSingleProduct] = useState(false);
   const [SingleProductData, setSingleProductData] = useState<any>({});
 
-
   const handleCardClick = (item: any) => {
     setSingleProductData(item);
     onOpen();
@@ -70,35 +69,33 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
             key={item.id + item.name}
             css={css.CardOuter}
           >
+            {imageLoading && <h1>Loading</h1>}
 
-              {imageLoading && <h1>Loading</h1>}
-
-              <Image
-                onLoad={() => setImageLoading(false)}
-                src={item.img}
-                alt={item.name}
-                css={css.CardImageCss}
-              />
-              <NameTag>{item.name}</NameTag>
-              <Box css={css.PriceCont}>
-                <Text css={css.NewPriceCss}>&#x20B9; {item.newPrice}</Text>
-                {item.newPrice != item.oldPrice && (
-                  <Text css={css.OldPriceCss}>
-                    <s>&#x20B9; {item.oldPrice}</s>
-                  </Text>
-                )}
-                {item.newPrice != item.oldPrice && (
-                  <Text css={css.DiscountCss}>
-                    {DiscountPercent(item.id, item.oldPrice, item.newPrice)}%
-                  </Text>
-                )}
-              </Box>
-              <Box css={css.RatingAndReviewCont}>
-                <Badge css={css.RatingCss} variant="outline">
-                  {item.rating} <Image as={AiTwotoneStar} />
-                </Badge>
-                <Text css={css.ReviewCss}>Based on {item.review} reviews</Text>
-              </Box>
+            <Image
+              onLoad={() => setImageLoading(false)}
+              src={item.img}
+              alt={item.name}
+              css={css.CardImageCss}
+            />
+            <NameTag>{item.name}</NameTag>
+            <Box css={css.PriceCont}>
+              <Text css={css.NewPriceCss}>&#x20B9; {item.newPrice}</Text>
+              {item.newPrice != item.oldPrice && (
+                <Text css={css.OldPriceCss}>
+                  <s>&#x20B9; {item.oldPrice}</s>
+                </Text>
+              )}
+              {item.newPrice != item.oldPrice && (
+                <Text css={css.DiscountCss}>
+                  {DiscountPercent(item.id, item.oldPrice, item.newPrice)}%
+                </Text>
+              )}
+            </Box>
+            <Box css={css.RatingAndReviewCont}>
+              <Badge css={css.RatingCss} variant="outline">
+                {item.rating} <Image as={AiTwotoneStar} />
+              </Badge>
+              <Text css={css.ReviewCss}>Based on {item.review} reviews</Text>
             </Box>
           </Box>
         ))}

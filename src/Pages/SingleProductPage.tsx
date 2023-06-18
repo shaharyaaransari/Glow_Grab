@@ -30,6 +30,7 @@ import { FindProductItem } from "../Functions/FindProductItem";
 import { getData } from "../Redux/Products/action";
 import { DiscountPercent } from "../Functions/DiscountPercent";
 import Navbar from "../Components/Navbar";
+import { AddCartObj, AddToCart } from "../Redux/carts/action";
 
 const SingleProductPage = ({
   SingleProductData,
@@ -50,7 +51,7 @@ const SingleProductPage = ({
     rating,
     review,
   } = SingleProductData;
-  // const { isOpen, onOpen, onClose } = useDisclosure();
+  const dispatch: any = useDispatch();
 
   // Rating Stars
   const fullStars = Math.floor(rating);
@@ -68,15 +69,20 @@ const SingleProductPage = ({
     return stars;
   };
 
+  const handleAddToCart = () => {
+    dispatch(AddToCart(SingleProductData));
+  };
+
   return (
     <Modal closeOnEsc onClose={onClose} size={"full"} isOpen={isOpen}>
       <ModalContent css={css.Outer}>
-        {/* <ModalCloseButton /> */}
+        {/* Close Modal Icon */}
         <Image
           onClick={() => onClose()}
           as={RiDeleteBack2Line}
           css={css.CloseIcon}
         />
+
         {/* <ModalBody> */}
         <Box css={css.InnerCont}>
           {/* Image Container */}
@@ -149,7 +155,9 @@ const SingleProductPage = ({
 
             {/* Add To Cart Button */}
             <Box css={css.AddCartCont}>
-              <Button css={css.AddCartBtn}>Add To Cart</Button>
+              <Button onClick={handleAddToCart} css={css.AddCartBtn}>
+                Add To Cart
+              </Button>
             </Box>
           </Box>
         </Box>

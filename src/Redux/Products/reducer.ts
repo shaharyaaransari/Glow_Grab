@@ -18,7 +18,7 @@ const initState = {
   totalPages: 0,
   products: [],
   categories: [],
-  addProduct:[]
+  addProduct: [],
 };
 
 export const reducer = (
@@ -52,9 +52,9 @@ export const reducer = (
         totalPages: totalPages,
       };
     }
-     case  ADD_PRODUCT:{
-      return {...state,addProduct:[...state.addProduct,payload]}
-     }
+    case ADD_PRODUCT: {
+      return { ...state, addProduct: [...state.addProduct, payload] };
+    }
     default: {
       return initState;
     }

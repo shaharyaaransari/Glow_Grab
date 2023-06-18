@@ -39,7 +39,8 @@ export const reducer = (
       };
     }
     case GetRequestSuccess: {
-      let Cate = getUniqueSubCates(payload);
+      let Cate = getUniqueSubCates([...payload]);
+      // console.log(payload);
 
       return {
         ...state,

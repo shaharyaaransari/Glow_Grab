@@ -10,11 +10,17 @@ const AllRoutes = () => {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/products/:type" element={<ProductPage />} />
+
+      <Route path="/product/:id" element={<SingleProductPage />} />
+      <Route path="/cart" element={<Cart />} /> 
+      
+
       {/* <Route path="/women" element={<ProductPage type="women" />} />
       <Route path="/kids" element={<ProductPage type="kids" />} />
       <Route path="/sneakers" element={<ProductPage type="sneakers" />} /> */}
       {/* <Route path="/product/:TypeAndId" element={<SingleProductPage />} /> */}
       <Route path="/cart" element={<Cart />} />
+
     </Routes>
   );
 };

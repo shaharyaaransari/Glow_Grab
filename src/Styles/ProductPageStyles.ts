@@ -7,10 +7,11 @@ export const ProductAndFilterCont = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding: 90px 150px 700px 150px;
+  padding: 90px 150px 0px 150px;
   background: rgb(44, 44, 46);
   color: rgb(189, 191, 193);
   font-family: Inter;
+  padding-bottom: 150px;
 
   @media (max-width: 800px) {
     padding-top: 50px;

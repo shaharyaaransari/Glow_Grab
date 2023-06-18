@@ -19,7 +19,7 @@ interface ProductPageType {
   type: string;
 }
 
-const ProductPage = () => {
+const ProductPage = ({ SetSingleProductData }: any) => {
   const [searchParam, setSearchParams] = useSearchParams();
   const dispatch:Dispatch<any> = useDispatch();
   const { type } = useParams();
@@ -110,7 +110,10 @@ const ProductPage = () => {
           OrderValue={OrderValue}
           setOrderValue={setOrderValue}
         />
-     <ProductsList Products={Products} />
+
+
+        <ProductsList type={type} Products={Products} />
+
         <Pagination
           totalPages={totalPages}
           page={page}

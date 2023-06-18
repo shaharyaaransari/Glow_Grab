@@ -35,11 +35,11 @@ const ProductsList = ({ Products }: ProductsListType) => {
   const [imageLoading, setImageLoading] = useState(true);
 
   const handleAddToCart = (id: number) => {};
-
+ //console.log(Products)
   return (
     <ProductListOuter>
       <ProductListCont>
-        {Products.map((item, ind) => (
+        {Products?.map((item, ind) => (
           <Box key={item.id} css={css.CardOuter}>
             <Box as={NavLink} to={`/product/${item.id}`} target="_blank">
               {/* <Text>{item.id}</Text> */}

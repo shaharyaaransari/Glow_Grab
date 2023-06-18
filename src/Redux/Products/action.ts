@@ -1,5 +1,5 @@
 // action.ts
-import { Dispatch } from "redux";
+import { Dispatch} from "redux";
 import axios, { AxiosResponse } from "axios";
 import {
   Action,
@@ -7,6 +7,7 @@ import {
   GetRequestError,
   GetRequestSuccess,
 } from "./actionTypes";
+
 
 // Action Object Functions
 const setLoadingGetRequest = () => {
@@ -30,6 +31,7 @@ export const getData = (url: string, dispatch: Dispatch) => {
       // console.log(res.data);
 
       const totalPages = res.headers["x-total-count"];
+      
       dispatch(setSuccessGetRequest(res.data, totalPages));
     })
     .catch((err) => {
@@ -38,3 +40,29 @@ export const getData = (url: string, dispatch: Dispatch) => {
       dispatch(setErrorGetRequest());
     });
 };
+type paramTypes = {
+  _page: number;
+  _limit: number;
+  _sort: string|undefined;
+  _order: string|undefined;
+  subCate: string[];
+};
+
+type objType = {
+  params: paramTypes;
+};
+
+
+ export const productData = (url:string, obj:objType) =>(dispatch:Dispatch)=>{
+    dispatch(setLoadingGetRequest())
+     axios.get(url, obj)
+     .then((res)=>{
+      const totalPages = res.headers["x-total-count"];  
+      dispatch(setSuccessGetRequest(res.data, totalPages));
+     })
+     .catch((err) => {
+      console.log(err);
+
+      dispatch(setErrorGetRequest());
+    });
+ }

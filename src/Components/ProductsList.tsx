@@ -55,6 +55,7 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
   const [showSingleProduct, setShowSingleProduct] = useState(false);
   const [SingleProductData, setSingleProductData] = useState<any>({});
 
+
   const handleCardClick = (item: any) => {
     setSingleProductData(item);
     onOpen();
@@ -69,7 +70,7 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
             key={item.id + item.name}
             css={css.CardOuter}
           >
-            <Box>
+
               {imageLoading && <h1>Loading</h1>}
 
               <Image

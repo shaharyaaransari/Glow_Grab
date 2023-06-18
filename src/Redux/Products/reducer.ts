@@ -1,3 +1,4 @@
+import { ADD_PRODUCT } from "../../Components/ProductsList";
 import { getUniqueSubCates } from "../../Functions/GetSubCate";
 import {
   GetRequestLoading,
@@ -17,6 +18,7 @@ const initState = {
   totalPages: 0,
   products: [],
   categories: [],
+  addProduct:[]
 };
 
 export const reducer = (
@@ -49,6 +51,9 @@ export const reducer = (
         totalPages: totalPages,
       };
     }
+     case  ADD_PRODUCT:{
+      return {...state,addProduct:[...state.addProduct,payload]}
+     }
     default: {
       return initState;
     }

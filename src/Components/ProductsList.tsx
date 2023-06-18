@@ -21,7 +21,8 @@ import {
   ProductListCont,
   NameTag,
 } from "../Styles/ProductListStyles";
-
+import { useDispatch, useSelector } from "react-redux";
+export const ADD_PRODUCT : string = "ADD_PRODUCT"
 interface ProductsListType {
   Products: Array<any>;
 }
@@ -33,8 +34,24 @@ interface NavigateType {
 const ProductsList = ({ Products }: ProductsListType) => {
   const navigate = useNavigate();
   const [imageLoading, setImageLoading] = useState(true);
-
-  const handleAddToCart = (id: number) => {};
+ const dispatch=useDispatch()
+  const addProduct=useSelector((store:any)=>store.ProductReducer.addProduct)
+// console.log(addProduct)
+ 
+   interface reducerTypes{
+    type:string;
+    payload : any;
+   }
+  const handleAddToCart = (id: number) => {
+ Products.filter((el,ind)=>{
+      if(id===el.id){
+        dispatch({type:ADD_PRODUCT,payload:el})
+      
+      
+      }
+    })
+  };
+  console.log(addProduct)
 
   return (
     <ProductListOuter>

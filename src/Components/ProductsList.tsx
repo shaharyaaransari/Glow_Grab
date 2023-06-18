@@ -67,6 +67,8 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
   const handleAddToCart = (id: number) => {};
 
 
+
+
   const handleCardClick = (item: any) => {
     //return navigate(`/product/${type}-${item.id}`);
     // window.open(`/product/${type}-${item.id}`, "_blank");
@@ -90,6 +92,7 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
             // to={`/product/${type}-${item.id}`}
             // target="_blank"
             >
+
               {/* <Text>{item.id}</Text> */}
               {imageLoading && <h1>Loading</h1>}
 

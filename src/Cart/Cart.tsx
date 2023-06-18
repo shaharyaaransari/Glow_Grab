@@ -32,7 +32,7 @@ const Cart= () => {
   return (
     <Box>
       <Navbar />
-      <Box w={{ base: "95%", md: "92%" }} m="auto">
+      <Box w={{ base: "95%", md: "92%" }} m="auto" >
         <NavLink to="/">
           <Box display="inline-block">
             <Flex

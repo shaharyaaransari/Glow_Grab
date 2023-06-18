@@ -34,7 +34,9 @@ const ProductsList = ({ Products }: ProductsListType) => {
   const navigate = useNavigate();
   const [imageLoading, setImageLoading] = useState(true);
 
-  const handleAddToCart = (id: number) => {};
+  const handleAddToCart = (id: number) => {
+    
+  };
  //console.log(Products)
   return (
     <ProductListOuter>

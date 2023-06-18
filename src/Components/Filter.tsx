@@ -21,7 +21,7 @@ const Filter = ({ CategoriesArray,subCate,setSubcate,setCategory,category }: any
 
   const handleCategory = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target
-    // console.log(value)
+   
     let newCategory = [...subCate]
     if (subCate.includes(value)) {
       newCategory = newCategory.filter((el) => el !== value)

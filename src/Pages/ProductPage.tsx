@@ -92,7 +92,7 @@ const ProductPage = ({ SetSingleProductData }: any) => {
       subCate: searchParam.getAll("subCate"),
     },
   };
-   console.log(subCate)
+   
    let URLS = `${process.env.REACT_APP_TESTING_URL}/${type}`
    // console.log(URLS)
   useEffect(()=>{

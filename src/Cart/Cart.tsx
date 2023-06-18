@@ -23,11 +23,11 @@ const Cart = () => {
   // const { cartItems } = useSelector((store: any) => store.cartReducer.cartItems);
   const addProduct = useSelector((store: any) => store.cartReducer.cart);
 
-  useEffect(() => {
-    dispatch(getCartData());
-    document.title = 'My Cart: products';
-  }, [dispatch]);
-  console.log(addProduct)
+  // useEffect(() => {
+  //   dispatch(getCartData());
+  //   document.title = 'My Cart: products';
+  // }, [dispatch]);
+  // console.log(addProduct)
 
   return (
     <Box>

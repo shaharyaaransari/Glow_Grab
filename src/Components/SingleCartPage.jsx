@@ -42,7 +42,7 @@ export const SingleCartPage = (props) => {
         <Flex justify="left" align="flex-start" gap="8" mt="8" mr="8">
           <Image
             w={{ base: "30%", sm: "20%" }}
-            src={productImage_src}
+            src=""
             alt={final_title}
           />
           <Box w="60%">

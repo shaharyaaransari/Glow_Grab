@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Box, Text, Input } from "@chakra-ui/react";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 
 // Files Import
 import { getData } from "../Redux/Products/action";
@@ -15,7 +15,12 @@ import Pagination from "../Components/Pagination";
 import * as css from "../Styles/ProductPageStyles";
 import { ProductAndFilterCont } from "../Styles/ProductPageStyles";
 
-const ProductPage = () => {
+interface ProductPageType {
+  type: string;
+}
+
+const ProductPage = ({ SetSingleProductData }: any) => {
+  const [searchParam, setSearchParams] = useSearchParams();
   const dispatch = useDispatch();
   const { type } = useParams();
   const URL = useSelector((store: any) => store.API_URL);
@@ -30,23 +35,40 @@ const ProductPage = () => {
   );
 
   // States
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(Number(searchParam.get("page")) || 1);
   const [limit, setLimit] = useState(9);
+  const [SortValue, setSortValue] = useState("Relevance");
+  const [OrderValue, setOrderValue] = useState("asc");
+
+  useEffect(() => {
+    const paramObj: any = {
+      page,
+    };
+    if (SortValue != "Relevance") {
+      paramObj.sort = SortValue;
+      paramObj.order = OrderValue;
+    }
+
+    setSearchParams(paramObj);
+
+    return () => {};
+  }, [page, SortValue, OrderValue, searchParam]);
 
   useEffect(() => {
     getData(`${URL}/${type}?_page=${page}&_limit=${limit}`, dispatch);
-  }, [type, page]);
-
-  useEffect(() => {
-    setPage(1);
-  }, [type, totalPages]);
+  }, [type, page, OrderValue, , SortValue]);
 
   return (
     <ProductAndFilterCont>
       <Filter CategoriesArray={CategoriesArray} />
       <Box css={css.RightSideDiv}>
-        <SortAndOrder />
-        <ProductsList Products={Products} />
+        <SortAndOrder
+          SortValue={SortValue}
+          setSortValue={setSortValue}
+          OrderValue={OrderValue}
+          setOrderValue={setOrderValue}
+        />
+        <ProductsList type={type} Products={Products} />
         <Pagination
           totalPages={totalPages}
           page={page}

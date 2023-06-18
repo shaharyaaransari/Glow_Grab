@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../Pages/HomePage";
 import ProductPage from "../Pages/ProductPage";
@@ -13,7 +13,7 @@ const AllRoutes = () => {
       {/* <Route path="/women" element={<ProductPage type="women" />} />
       <Route path="/kids" element={<ProductPage type="kids" />} />
       <Route path="/sneakers" element={<ProductPage type="sneakers" />} /> */}
-      <Route path="/product/:id" element={<SingleProductPage />} />
+      {/* <Route path="/product/:TypeAndId" element={<SingleProductPage />} /> */}
       <Route path="/cart" element={<Cart />} />
     </Routes>
   );

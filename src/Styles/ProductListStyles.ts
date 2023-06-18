@@ -19,6 +19,7 @@ export const ProductListCont = styled.div`
 `;
 export const CardOuter = css`
   border-radius: 8px;
+  cursor: pointer;
   overflow: hidden;
   background: rgba(66, 66, 75, 0.407);
   padding-bottom: 20px;

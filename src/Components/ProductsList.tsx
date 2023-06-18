@@ -3,6 +3,7 @@ import { DiscountPercent } from "../Functions/DiscountPercent";
 import {
   Box,
   Image,
+  useDisclosure,
   Text,
   Button,
   Badge,
@@ -21,8 +22,10 @@ import {
   ProductListCont,
   NameTag,
 } from "../Styles/ProductListStyles";
+import SingleProductPage from "../Pages/SingleProductPage";
 
 interface ProductsListType {
+  type: any;
   Products: Array<any>;
 }
 
@@ -30,18 +33,38 @@ interface NavigateType {
   target: string;
 }
 
-const ProductsList = ({ Products }: ProductsListType) => {
+const ProductsList = ({ Products, type }: ProductsListType) => {
   const navigate = useNavigate();
   const [imageLoading, setImageLoading] = useState(true);
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [showSingleProduct, setShowSingleProduct] = useState(false);
+  const [SingleProductData, setSingleProductData] = useState<any>({});
 
   const handleAddToCart = (id: number) => {};
+
+  const handleCardClick = (item: any) => {
+    //return navigate(`/product/${type}-${item.id}`);
+    // window.open(`/product/${type}-${item.id}`, "_blank");
+    //setShowSingleProduct(true);
+    setSingleProductData(item);
+    onOpen();
+  };
 
   return (
     <ProductListOuter>
       <ProductListCont>
         {Products.map((item, ind) => (
-          <Box key={item.id} css={css.CardOuter}>
-            <Box as={NavLink} to={`/product/${item.id}`} target="_blank">
+          <Box
+            onClick={() => handleCardClick(item)}
+            key={item.id}
+            css={css.CardOuter}
+          >
+            <Box
+
+            // as={NavLink}
+            // to={`/product/${type}-${item.id}`}
+            // target="_blank"
+            >
               {/* <Text>{item.id}</Text> */}
               {imageLoading && <h1>Loading</h1>}
 
@@ -72,15 +95,24 @@ const ProductsList = ({ Products }: ProductsListType) => {
                 <Text css={css.ReviewCss}>Based on {item.review} reviews</Text>
               </Box>
             </Box>
-            <Box
+            {/* <Box
               onClick={() => handleAddToCart(item.id)}
               css={css.AddToCartButton}
             >
               Add to Cart
-            </Box>
+            </Box> */}
           </Box>
         ))}
       </ProductListCont>
+      {/* SingleProduct Modal */}
+      {/* {showSingleProduct && ( */}
+      <SingleProductPage
+        isOpen={isOpen}
+        onOpen={onOpen}
+        onClose={onClose}
+        SingleProductData={SingleProductData}
+      />
+      {/* )} */}
     </ProductListOuter>
   );
 };

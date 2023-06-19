@@ -16,7 +16,7 @@ const Navbar = () => {
     <NavBarOuter>
       <Logo />
       <NavBarOptions />
-   <Link to='./cart'><NavBarCartAndLogIn /></Link> 
+      <NavBarCartAndLogIn />
 
       <Input
         type="text"

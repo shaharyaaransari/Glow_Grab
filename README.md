@@ -1,5 +1,7 @@
 # Glam Grab
 
+Deployed Link : https://glowgrab.netlify.app/
+
 Repo Link : https://github.com/shaharyaaransari/quite-trade-54
 
 Dribble Link : https://dribbble.com/shots/18494892-Foggy-Clothing-ecommerce-Landing-Page
@@ -16,9 +18,10 @@ Dribble Link : https://dribbble.com/shots/18494892-Foggy-Clothing-ecommerce-Land
 
 - Redux Toolkit : npm install @reduxjs/toolkit
 
- - npm i --save-dev @types/react-slick for slider 
-  - npm install slick-carousel
+- Netlify - npm install netlify-cli -g
 
+- npm i --save-dev @types/react-slick for slider
+- npm install slick-carousel
 
 ### ------------- Styling Libraries --------------
 

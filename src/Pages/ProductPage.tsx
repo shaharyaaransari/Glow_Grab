@@ -36,7 +36,8 @@ const ProductPage = ({ SetSingleProductData }: any) => {
   const totalPages = useSelector(
     (store: any) => store.ProductReducer.totalPages
   );
-  const Products = useSelector((store: any) => store.ProductReducer.products);
+  const pro = useSelector((store: any) => store.ProductReducer.products);
+  const Products = pro;
   const CategoriesArray =
     type == "men"
       ? menCate

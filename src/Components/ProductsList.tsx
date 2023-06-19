@@ -64,13 +64,13 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
   return (
     <ProductListOuter>
       <ProductListCont>
-        {Products.map((item, ind) => (
+      {Products.map((item, ind) => (
           <Box
             onClick={() => handleCardClick(item)}
             key={item.id + item.name}
             css={css.CardOuter}
           >
-
+            <Box>
               {imageLoading && <h1>Loading</h1>}
 
               <Image
@@ -114,5 +114,4 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
     </ProductListOuter>
   );
 };
-
 export default ProductsList;

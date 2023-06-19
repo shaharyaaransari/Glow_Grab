@@ -1,34 +1,38 @@
-# Glam Grab
+# Glow Grab
 
-Deployed Link : https://glowgrab.netlify.app/
+Deployed Link - https://glowgrab.netlify.app/
 
-Repo Link : https://github.com/shaharyaaransari/quite-trade-54
+## What is Glow Grab about?
 
-Dribble Link : https://dribbble.com/shots/18494892-Foggy-Clothing-ecommerce-Landing-Page
+Glow Grab is an E-commerce clothing website providing services including clothing categories in men, women, kids and sneakers.
+This Project is build with React, TypeScript, Redux and Chakra UI library and JSON-server for backend network requests.
 
-## Every Npm Package Installed :-
+## Features:-
 
-- React Router Dom : npm install react-router-dom
+- Users can create an account by providing necessary information.
+- Registered users can log in securely to access their account.
+- Products are organized into categories for easy navigation, including men, women, kids, and sneakers.
+- Users can view available products within each category.
+- Users can select products and add them to their shopping cart.
+- Users can proceed to checkout and complete their purchase.
+- Users have the option to sort products based on relevant criteria, such as price or popularity.
+- Users can apply filters to narrow down their product search based on Product types.
 
-- Axios : npm install axios
+## Installation
 
-- Json Server : npm install json-server
+Follow these steps to install and run the project locally:
 
-- Redux / React-Redux / Thunk : npm i redux react-redux redux-thunk
+1. Clone the repository: `https://github.com/shaharyaaransari/quite-trade-54`
+2. Install dependencies: `npm install`
+3. Start the server: `npm run server`
+4. Access the application via `http://localhost:3000` in your web browser.
 
-- Redux Toolkit : npm install @reduxjs/toolkit
+## Tech Stacks Used:-
 
-- Netlify - npm install netlify-cli -g
+React / Redux / TyepScript / Json-Server / Chakra UI / Styled-Components / React-Router-Dom / Axios
 
-- npm i --save-dev @types/react-slick for slider
-- npm install slick-carousel
+![Landing Page](./src/images/WebsiteImages/LandingPage)
 
-### ------------- Styling Libraries --------------
+![Product Page](./src/images/WebsiteImages/ProductPage)
 
-- Chakra UI : npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
-
-- Chakra UI Icons : npm i @chakra-ui/icons
-
-- React Icons : npm install react-icons / npm install react-icons --save
-
-- Styled Components : npm i styled-components@4.1.3
+![Single Product](./src/images/WebsiteImages/SingleProductPage)

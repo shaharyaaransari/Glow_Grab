@@ -24,7 +24,7 @@ import { CartAndLoginOuter } from "../Styles/NavBarStyles";
 const NavBarCartAndLogIn = () => {
   return (
     <CartAndLoginOuter>
-      <NavLink to="/login" > {/* Add NavLink with "to" prop */}
+      <NavLink to="/login" >
         <Image css={css.LogInIconCss} as={RxPerson} />
       </NavLink>
       <Image css={css.CartIconCss} as={FiShoppingCart} />

@@ -63,13 +63,12 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
   return (
     <ProductListOuter>
       <ProductListCont>
-      {Products.map((item, ind) => (
+        {Products.map((item, ind) => (
           <Box
             onClick={() => handleCardClick(item)}
             key={item.id + item.name}
             css={css.CardOuter}
           >
-
             {imageLoading && <h1>Loading</h1>}
 
             <Image
@@ -97,9 +96,8 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
                 {item.rating} <Image as={AiTwotoneStar} />
               </Badge>
               <Text css={css.ReviewCss}>Based on {item.review} reviews</Text>
-
             </Box>
-        
+          </Box>
         ))}
       </ProductListCont>
 

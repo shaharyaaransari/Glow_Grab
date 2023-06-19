@@ -4,6 +4,8 @@ import HomePage from "../Pages/HomePage";
 import ProductPage from "../Pages/ProductPage";
 import SingleProductPage from "../Pages/SingleProductPage";
 import Cart from "../Cart/Cart";
+import LoginPage from "../Pages/LoginPage";
+import SignupCard from "../Pages/SignUpForm";
 
 const AllRoutes = () => {
   return (
@@ -11,6 +13,8 @@ const AllRoutes = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="/products/:type" element={<ProductPage />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/login" element={<LoginPage />} />
+
     </Routes>
   );
 };

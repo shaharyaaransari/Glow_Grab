@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Provider } from "react-redux";
+import { Provider as ReduxProvider } from "react-redux"; // Updated import
 import { store } from "./Redux/Store";
 
 const root = ReactDOM.createRoot(
@@ -14,11 +14,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <ChakraProvider>
-    <Provider store={store}>
+    <ReduxProvider store={store}> {/* Updated usage */}
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </Provider>
+    </ReduxProvider> {/* Updated usage */}
   </ChakraProvider>
 );
 

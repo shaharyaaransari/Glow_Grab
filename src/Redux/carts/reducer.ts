@@ -3,6 +3,7 @@ import {
   GET_CART_ERROR,
   GET_CART_SUCCESS,
   ADD_TO_CART,
+  DELETE_CART,
 } from "./actionType";
 
 interface Action {
@@ -53,6 +54,12 @@ export const reducer = (
       return {
         ...state,
         cart: [...state.cart, payload],
+      };
+    }
+    case DELETE_CART: {
+      return {
+        ...state,
+        cart: [...state.cart],
       };
     }
     default: {

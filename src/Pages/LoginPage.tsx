@@ -34,7 +34,7 @@ const LoginPage = () => {
                 console.log("Logged in successfully:", data);
                 setLoggedIn(true);
                 setError("");
-                window.location.href = "/product/:id";
+                window.location.href = "/cart";
             } else {
                 setError("Invalid email or password");
             }

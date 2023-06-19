@@ -97,7 +97,7 @@ const ProductsList = ({ Products, type }: ProductsListType) => {
               </Badge>
               <Text css={css.ReviewCss}>Based on {item.review} reviews</Text>
             </Box>
-          </Box>
+        
         ))}
       </ProductListCont>
 

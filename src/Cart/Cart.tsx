@@ -108,9 +108,9 @@ const Cart = () => {
         >
           {addProduct.length !== 0 && (
             <Box w="100%">
-              {addProduct.map((item: any) => (
+              {/* {addProduct.map((item: any) => (
                 <SingleCartPage key={item.id + item.name} {...item} />
-              ))}
+              ))} */}
             </Box>
           )}
 

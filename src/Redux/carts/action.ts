@@ -4,6 +4,7 @@ import {
   GET_CART_ERROR,
   ADD_TO_CART,
   GET_CART_SUCCESS,
+  DELETE_CART,
 } from "./actionType";
 import { getCartAPI, deleteItemAPI } from "./cart.api";
 
@@ -36,3 +37,14 @@ export const AddToCart = (item: any) => (dispatch: any) => {
   dispatch(AddCartObj(item));
   // console.log(item);
 };
+
+
+export const DeleteCartObj = (payload: any) => {
+  return { type: DELETE_CART, payload };
+};
+
+// export const deleteCartItem = (id: any) => {
+//   return { type: DELETE_CART, payload: id };
+// };
+
+

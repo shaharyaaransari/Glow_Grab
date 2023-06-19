@@ -115,3 +115,4 @@ export const SingleCartPage = ({ img, id, category, subCate, name, brand, newPri
     </Box>
   );
 };
+

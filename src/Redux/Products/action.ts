@@ -56,6 +56,7 @@ type objType = {
  export const productData = (url:string, obj:objType) =>(dispatch:Dispatch)=>{
     dispatch(setLoadingGetRequest())
      axios.get(url, obj)
+     
      .then((res)=>{
       const totalPages = res.headers["x-total-count"];  
       dispatch(setSuccessGetRequest(res.data, totalPages));

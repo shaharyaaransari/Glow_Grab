@@ -19,6 +19,7 @@ import { Footer } from "../Components/Footer";
 import { AddToCart, getCartData } from "../Redux/carts/action";
 import { SingleCartPage } from "../Components/SingleCartPage";
 import { number } from "yargs";
+
 import { idText } from "typescript";
 import Billing from "./Billing";
 
@@ -54,6 +55,7 @@ useEffect(()=>{
  
 
 console.log(product)
+
   return (
     <ChakraProvider>
       <CSSReset />
@@ -85,7 +87,9 @@ console.log(product)
             Shopping Cart
           </Heading>
 
+
           {product.length === 0 ? (
+
             <Heading
               fontWeight="normal"
               mt={{ base: "6", md: "8" }}
@@ -111,8 +115,10 @@ console.log(product)
                 color="blackAlpha.700"
               >
                 (
+
                 {`${product.length} ${
                   product.length > 1 ? "items" : "item"
+
                 }`}
                 )
               </Text>
@@ -128,24 +134,32 @@ console.log(product)
             gap="8"
             my="6"
           >
+
             {product.length !== 0 && (
               <Box w="100%">
                 {product.map((item: any) => (
+
+            
+
                   <SingleCartPage
                     key={item.id + item.name}
                     {...item}
                     handleDelete={handleDelete}
+
                     handleDecrease={handleDecrease}
                     handleIncrease={handleIncrease}
                     quantity={quantity}
                     setquantity={setquantity}
                
+
                   />
                 ))}
               </Box>
             )}
 
+
             {product.length === 0 && (
+
               <Box w={{ base: "100%", lg: "50%", xl: "100%" }}>
                 <Stack
                   h={{ base: "200px", md: "450px" }}
@@ -171,16 +185,20 @@ console.log(product)
                 </Stack>
               </Box>
             )}
+
+
             <Box w={{ base: "100%", lg: "50%" }}>
               <Box
                 w="100%"
                 mt="8"
                 py="8"
                 borderY={{ base: "none", md: "1px solid lightgray" }}
+
              
               >
          {/* <h1>{quantity * amt}</h1> */}
         
+
                 <Box ml="4">
                   <Heading
                     size="md"

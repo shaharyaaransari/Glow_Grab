@@ -15,12 +15,15 @@ import {
   CategoryTextAndResetBtnCont,
 } from "../Styles/ProductPageStyles";
 
-import { useSearchParams } from "react-router-dom"
-const Filter = ({ CategoriesArray,subCate,setSubcate,setCategory,category ,paramObj,setSearchParams}: any) => {
-
-  
-
-
+import { useSearchParams } from "react-router-dom";
+const Filter = ({
+  CategoriesArray,
+  subCate,
+  setSubcate,
+  setCategory,
+  category,
+  setSearchParams,
+}: any) => {
   const handleCategory = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
     // console.log(value)
@@ -31,17 +34,16 @@ const Filter = ({ CategoriesArray,subCate,setSubcate,setCategory,category ,param
       newCategory.push(value);
     }
 
-    setSubcate(newCategory)
-  }
-  useEffect(() => {
-    if(subCate){
-      paramObj.subCate=subCate
-    }
-    
-    setSearchParams(paramObj)
-  }, [subCate])
-   console.log(subCate)
- 
+    setSubcate(newCategory);
+  };
+  // useEffect(() => {
+  //   if(subCate){
+  //     paramObj.subCate=subCate
+  //   }
+
+  //   setSearchParams(paramObj)
+  // }, [subCate])
+  //  console.log(subCate)
 
   return (
     <FilterCont>

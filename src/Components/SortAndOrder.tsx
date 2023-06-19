@@ -25,12 +25,21 @@ import {
   ProductAndFilterCont,
 } from "../Styles/ProductPageStyles";
 
-const SortAndOrder = () => {
-  const [SortValue, setValue] = useState("Relevance");
-  const [OrderValue, setOrderValue] = useState("asc");
+interface SortAndOrderType {
+  SortValue: string;
+  setSortValue: any;
+  OrderValue: string;
+  setOrderValue: any;
+}
 
+const SortAndOrder = ({
+  SortValue,
+  setSortValue,
+  OrderValue,
+  setOrderValue,
+}: SortAndOrderType) => {
   const handleSelect = (selectedValue: string) => {
-    setValue(selectedValue);
+    setSortValue(selectedValue);
   };
 
   return (
@@ -54,7 +63,7 @@ const SortAndOrder = () => {
             Relevance
           </MenuItem>
           <MenuItem
-            onClick={() => handleSelect("Price")}
+            onClick={() => handleSelect("newPrice")}
             css={
               SortValue == "Price"
                 ? css.ActiveMenuItemCss
@@ -64,7 +73,7 @@ const SortAndOrder = () => {
             Price
           </MenuItem>
           <MenuItem
-            onClick={() => handleSelect("Rating")}
+            onClick={() => handleSelect("rating")}
             css={
               SortValue == "Rating"
                 ? css.ActiveMenuItemCss
@@ -74,7 +83,7 @@ const SortAndOrder = () => {
             Ratings
           </MenuItem>
           <MenuItem
-            onClick={() => handleSelect("Reviews")}
+            onClick={() => handleSelect("review")}
             css={
               SortValue == "Reviews"
                 ? css.ActiveMenuItemCss

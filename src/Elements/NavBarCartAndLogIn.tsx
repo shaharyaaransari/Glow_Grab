@@ -28,6 +28,7 @@ const NavBarCartAndLogIn = () => {
         <Image css={css.LogInIconCss} as={RxPerson} />
       </NavLink>
       <Image css={css.CartIconCss} as={FiShoppingCart} />
+
     </CartAndLoginOuter>
   );
 };

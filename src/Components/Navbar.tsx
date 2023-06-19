@@ -4,7 +4,7 @@ import Logo from "../Elements/Logo";
 import NavBarOptions from "../Elements/NavBarOptions";
 import NavBarCartAndLogIn from "../Elements/NavBarCartAndLogIn";
 import NavBarDrawer from "../Elements/NavBarDrawer";
-
+import { Link } from "react-router-dom";
 // Styles Components
 import * as css from "../Styles/NavBarStyles";
 import { NavBarOuter } from "../Styles/NavBarStyles";

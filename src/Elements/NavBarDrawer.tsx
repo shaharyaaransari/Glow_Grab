@@ -35,18 +35,13 @@ const NavBarDrawer = () => {
           <DrawerBody>
             {/* Link To Products */}
             <SmallScreenLinksCont>
-              <Text
-                onClick={onClose}
-                as={NavLink}
-                to="/products/men"
-                css={css.LinksCss}
-              >
+              <Text onClick={onClose} as={NavLink} to="/men" css={css.LinksCss}>
                 Men
               </Text>
               <Text
                 onClick={onClose}
                 as={NavLink}
-                to="/products/women"
+                to="/women"
                 css={css.LinksCss}
               >
                 Women
@@ -54,7 +49,7 @@ const NavBarDrawer = () => {
               <Text
                 onClick={onClose}
                 as={NavLink}
-                to="/products/kids"
+                to="/kids"
                 css={css.LinksCss}
               >
                 Kids
@@ -62,7 +57,7 @@ const NavBarDrawer = () => {
               <Text
                 onClick={onClose}
                 as={NavLink}
-                to="/products/sneakers"
+                to="/sneakers"
                 css={css.LinksCss}
               >
                 Sneakers

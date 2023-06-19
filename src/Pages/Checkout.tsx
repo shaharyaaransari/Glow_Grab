@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Footer } from "../Components/Footer";
 
 const Checkout = () => {
   return (
-    <div>Checkout</div>
-  )
-}
+    <div>
+      <Footer />
+    </div>
+  );
+};
 
-export default Checkout
+export default Checkout;

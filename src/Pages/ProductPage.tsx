@@ -66,14 +66,11 @@ const ProductPage = ({ SetSingleProductData }: any) => {
     if (subCate) {
       paramObj.subCate = subCate;
     }
-
-
     setSearchParams(paramObj);
 
     return () => {};
   }, [page, SortValue, OrderValue, subCate]);
 
- 
   type paramTypes = {
     _page: number;
     _limit: number;
@@ -90,23 +87,29 @@ const ProductPage = ({ SetSingleProductData }: any) => {
     params: {
       _page: Number(searchParam.get("page")),
       _limit: limit,
-
       _sort: SortValue !== "Relevance" ? SortValue : undefined,
       _order: SortValue !== "Relevance" ? OrderValue : undefined,
       subCate: searchParam.getAll("subCate"),
     },
   };
 
-   let URLS = `${process.env.REACT_APP_TESTING_URL}/${type}`
-   // console.log(URLS)
-  useEffect(()=>{
-    dispatch(productData(URLS,obj))
+  let URLS = `${process.env.REACT_APP_TESTING_URL}/${type}`;
+  // console.log(URLS)
+  useEffect(() => {
+    dispatch(productData(URLS, obj));
     //productData(())
-  },[searchParam])  
-   // console.log(Products)
+  }, [searchParam]);
+  // console.log(Products)
   return (
     <ProductAndFilterCont>
-      <Filter CategoriesArray={CategoriesArray} subCate={subCate} paramObj={paramObj} setSubcate={setSubcate} setCategory={setCategory} category={category} setSearchParams={setSearchParams}/>
+      <Filter
+        CategoriesArray={CategoriesArray}
+        subCate={subCate}
+        setSubcate={setSubcate}
+        setCategory={setCategory}
+        category={category}
+        setSearchParams={setSearchParams}
+      />
 
       <Box css={css.RightSideDiv}>
         <SortAndOrder

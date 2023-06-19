@@ -1,3 +1,4 @@
+
 import { Dispatch, useEffect, useState } from "react";
 import {
   Box,
@@ -19,23 +20,41 @@ import { AddToCart, getCartData } from "../Redux/carts/action";
 import { SingleCartPage } from "../Components/SingleCartPage";
 import { number } from "yargs";
 
+import { idText } from "typescript";
+import Billing from "./Billing";
+
 const Cart = () => {
   const dispatch: any = useDispatch();
 
   const addProduct = useSelector((store: any) => store.cartReducer.cart);
-
+const [product, setProduct]=useState(addProduct)
+const [quantity, setquantity]=useState(1)
+const [amt, setamt]=useState(0)
+  const handleDecrease=(prev:number)=>{
+setquantity((prev)=>prev-1)
+  }
+  const handleIncrease=(prev:number)=>{
+    setquantity((prev)=>prev+1)
+      }
   const handleDelete = (id: number) => {
-    const upadatTodo = addProduct.filter((el: any) => {
-      if (id !== el.id) {
-        return true;
+    const upadatTodo = product.filter((el: any) => {
+      if (id === el.id) {
+        return false;
+      } else{
+        return true
       }
     });
-    dispatch(AddToCart(upadatTodo));
+    setProduct(upadatTodo)
   };
+ const setprice=()=>{
+  
+ }
 
-  useEffect(() => {
-    console.log(addProduct);
-  }, [addProduct]);
+useEffect(()=>{
+},[amt])
+ 
+
+console.log(product)
 
   return (
     <ChakraProvider>
@@ -68,7 +87,9 @@ const Cart = () => {
             Shopping Cart
           </Heading>
 
-          {addProduct.length === 0 ? (
+
+          {product.length === 0 ? (
+
             <Heading
               fontWeight="normal"
               mt={{ base: "6", md: "8" }}
@@ -94,8 +115,10 @@ const Cart = () => {
                 color="blackAlpha.700"
               >
                 (
-                {`${addProduct.length} ${
-                  addProduct.length > 1 ? "items" : "item"
+
+                {`${product.length} ${
+                  product.length > 1 ? "items" : "item"
+
                 }`}
                 )
               </Text>
@@ -111,19 +134,32 @@ const Cart = () => {
             gap="8"
             my="6"
           >
-            {addProduct.length !== 0 && (
+
+            {product.length !== 0 && (
               <Box w="100%">
-                {addProduct.map((item: any) => (
+                {product.map((item: any) => (
+
+            
+
                   <SingleCartPage
                     key={item.id + item.name}
                     {...item}
                     handleDelete={handleDelete}
+
+                    handleDecrease={handleDecrease}
+                    handleIncrease={handleIncrease}
+                    quantity={quantity}
+                    setquantity={setquantity}
+               
+
                   />
                 ))}
               </Box>
             )}
 
-            {addProduct.length === 0 && (
+
+            {product.length === 0 && (
+
               <Box w={{ base: "100%", lg: "50%", xl: "100%" }}>
                 <Stack
                   h={{ base: "200px", md: "450px" }}
@@ -150,13 +186,19 @@ const Cart = () => {
               </Box>
             )}
 
+
             <Box w={{ base: "100%", lg: "50%" }}>
               <Box
                 w="100%"
                 mt="8"
                 py="8"
                 borderY={{ base: "none", md: "1px solid lightgray" }}
+
+             
               >
+         {/* <h1>{quantity * amt}</h1> */}
+        
+
                 <Box ml="4">
                   <Heading
                     size="md"
@@ -227,3 +269,4 @@ const Cart = () => {
 };
 
 export default Cart;
+

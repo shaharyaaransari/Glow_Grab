@@ -63,7 +63,7 @@ const SortAndOrder = ({
             Relevance
           </MenuItem>
           <MenuItem
-            onClick={() => handleSelect("Price")}
+            onClick={() => handleSelect("newPrice")}
             css={
               SortValue == "Price"
                 ? css.ActiveMenuItemCss
@@ -73,7 +73,7 @@ const SortAndOrder = ({
             Price
           </MenuItem>
           <MenuItem
-            onClick={() => handleSelect("Rating")}
+            onClick={() => handleSelect("rating")}
             css={
               SortValue == "Rating"
                 ? css.ActiveMenuItemCss
@@ -83,7 +83,7 @@ const SortAndOrder = ({
             Ratings
           </MenuItem>
           <MenuItem
-            onClick={() => handleSelect("Reviews")}
+            onClick={() => handleSelect("review")}
             css={
               SortValue == "Reviews"
                 ? css.ActiveMenuItemCss

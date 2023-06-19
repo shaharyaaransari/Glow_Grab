@@ -14,22 +14,27 @@ import {
   FilterCont,
   CategoryTextAndResetBtnCont,
 } from "../Styles/ProductPageStyles";
-import { useSearchParams } from "react-router-dom"
-const Filter = ({ CategoriesArray,subCate,setSubcate,setCategory,category }: any) => {
- // const [searchParam, setSearchparam] = useSearchParams();
-  
+import { useSearchParams } from "react-router-dom";
+const Filter = ({
+  CategoriesArray,
+  subCate,
+  setSubcate,
+  setCategory,
+  category,
+}: any) => {
+  // const [searchParam, setSearchparam] = useSearchParams();
 
   const handleCategory = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { value } = e.target
+    const { value } = e.target;
     // console.log(value)
-    let newCategory = [...subCate]
+    let newCategory = [...subCate];
     if (subCate.includes(value)) {
-      newCategory = newCategory.filter((el) => el !== value)
+      newCategory = newCategory.filter((el) => el !== value);
     } else {
-      newCategory.push(value)
+      newCategory.push(value);
     }
-    setSubcate(newCategory)
-  }
+    setSubcate(newCategory);
+  };
   // useEffect(() => {
   //   const params = { subCate }
   //   setSearchParams(params)
@@ -43,7 +48,7 @@ const Filter = ({ CategoriesArray,subCate,setSubcate,setCategory,category }: any
         <Center>Clear</Center>
       </CategoryTextAndResetBtnCont>
       <Box css={css.CheckBoxContainer}>
-        {CategoriesArray.map((item:any, ind:number) => (
+        {CategoriesArray.map((item: any, ind: number) => (
           <Checkbox
             css={css.CheckBoxInputCss}
             key={item}
@@ -51,7 +56,7 @@ const Filter = ({ CategoriesArray,subCate,setSubcate,setCategory,category }: any
             value={item}
             checked={subCate.includes(item)}
             onChange={handleCategory}
-          // defaultChecked
+            // defaultChecked
           >
             {item}
           </Checkbox>

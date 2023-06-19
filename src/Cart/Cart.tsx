@@ -83,9 +83,46 @@ const Cart = () => {
               align={{ base: "center", xl: "flex-end" }}
               gap="2"
             >
+
               <Heading
                 fontWeight="normal"
                 size={{ base: "sm", sm: "md", md: "lg", lg: "xl" }}
+
+              (
+              {`${addProduct.length} ${
+                addProduct.length > 1 ? "items" : "item"
+              }`}
+              )
+            </Text>
+          </Flex>
+        )}
+
+        <Stack
+          align="flex-start"
+          justify="flex-start"
+          direction={{ base: "column", md: "row" }}
+          borderBottom={{ base: "none", md: "10px solid" }}
+          borderColor={{ base: "none", md: "blackAlpha.100" }}
+          gap="8"
+          my="6"
+        >
+          {addProduct.length !== 0 && (
+            <Box w="100%">
+              {/* {addProduct.map((item: any) => (
+                <SingleCartPage key={item.id + item.name} {...item} />
+              ))} */}
+            </Box>
+          )}
+
+          {addProduct.length === 0 && (
+            <Box w={{ base: "100%", lg: "50%", xl: "100%" }}>
+              <Stack
+                h={{ base: "200px", md: "450px" }}
+                border={{ base: "none", md: "10px solid" }}
+                borderColor={{ base: "none", md: "blackAlpha.100" }}
+                justify="center"
+                align="center"
+
               >
                 Ship - Worldwide Express
               </Heading>

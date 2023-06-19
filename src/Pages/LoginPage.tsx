@@ -1,111 +1,72 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import {
-    Flex,
+    Container,
+    FormContainer,
     Heading,
     Input,
     Button,
-    InputGroup,
-    Stack,
-    InputLeftElement,
-    chakra,
-    Box,
-    Link,
-    Avatar,
-    FormControl,
-    FormHelperText,
-    InputRightElement
-} from "@chakra-ui/react";
-import { FaUserAlt, FaLock } from "react-icons/fa";
+    ErrorText,
+} from "../Styles/LoginStyles";
 
-const CFaUserAlt = chakra(FaUserAlt);
-const CFaLock = chakra(FaLock);
+const LoginPage = () => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
+    const [loggedIn, setLoggedIn] = useState(false);
 
-const App = () => {
-    const [showPassword, setShowPassword] = useState(false);
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
 
-    const handleShowClick = () => setShowPassword(!showPassword);
+        try {
+            const response = await fetch(
+                "https://6453b750e9ac46cedf2d995b.mockapi.io/api/bikes/login",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ email, password }),
+                }
+            );
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log("Logged in successfully:", data);
+                setLoggedIn(true);
+                setError("");
+                window.location.href = "/product/:id";
+            } else {
+                setError("Invalid email or password");
+            }
+        } catch (error) {
+            setError("An error occurred during login");
+        }
+    };
 
     return (
-        <Flex
-            flexDirection="column"
-            width="100wh"
-            height="100vh"
-            backgroundColor="gray.200"
-            justifyContent="center"
-            alignItems="center"
-        >
-            <Stack
-                flexDir="column"
-                mb="2"
-                justifyContent="center"
-                alignItems="center"
-            >
-                <Avatar bg="gray.700" />
-                <Heading color="gray.700">Welcome</Heading>
-                <Box minW={{ base: "90%", md: "468px" }}>
-                    <form>
-                        <Stack
-                            spacing={4}
-                            p="1rem"
-                            backgroundColor="gray.700"
-                            boxShadow="md"
-                        >
-                            <FormControl>
-                                <InputGroup>
-                                    <InputLeftElement
-                                        pointerEvents="none"
-                                        children={<CFaUserAlt color="gray.300" />}
-                                    />
-                                    <Input type="email" placeholder="email address"
-                                        color="white" // Add this line
-                                    />
-                                </InputGroup>
-                            </FormControl>
-                            <FormControl>
-                                <InputGroup>
-                                    <InputLeftElement
-                                        pointerEvents="none"
-                                        color="gray.300"
-                                        children={<CFaLock color="gray.300" />}
-                                    />
-                                    <Input
-                                        type={showPassword ? "text" : "password"}
-                                        placeholder="Password" color="white"
-
-                                    />
-                                    <InputRightElement width="4.5rem">
-                                        <Button h="1.75rem" size="sm" onClick={handleShowClick}>
-                                            {showPassword ? "Hide" : "Show"}
-                                        </Button>
-                                    </InputRightElement>
-                                </InputGroup>
-                                <FormHelperText textAlign="right">
-                                    <Link>forgot password?</Link>
-                                </FormHelperText>
-                            </FormControl>
-                            <Button
-                                borderRadius={0}
-                                type="submit"
-                                variant="solid"
-                                colorScheme="black"
-                                width="full"
-                                borderColor="white" // Add this line
-
-                            >
-                                Login
-                            </Button>
-                        </Stack>
-                    </form>
-                </Box>
-            </Stack>
-            <Box>
-                New to us?{" "}
-                <Link color="black.500" href="#">
-                    Sign Up
-                </Link>
-            </Box>
-        </Flex>
+        <Container>
+            <FormContainer>
+                <Heading>Login</Heading>
+                {error && <ErrorText>{error}</ErrorText>}
+                {loggedIn && <p>You are logged in!</p>}
+                <form onSubmit={handleSubmit}>
+                    <Input
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <Input
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <Button type="submit">Login</Button>
+                </form>
+            </FormContainer>
+        </Container>
     );
 };
 
-export default App;
+export default LoginPage;

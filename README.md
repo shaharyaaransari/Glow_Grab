@@ -31,8 +31,8 @@ Follow these steps to install and run the project locally:
 
 React / Redux / TyepScript / Json-Server / Chakra UI / Styled-Components / React-Router-Dom / Axios
 
-![Landing Page](./src/images/WebsiteImages/LandingPage)
+![Landing Page](./src/images/WebsiteImages/LandingPage.png)
 
-![Product Page](./src/images/WebsiteImages/ProductPage)
+![Product Page](./src/images/WebsiteImages/ProductPage.png)
 
-![Single Product](./src/images/WebsiteImages/SingleProductPage)
+![Single Product](./src/images/WebsiteImages/SingleProductPage.png)

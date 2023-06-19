@@ -36,8 +36,7 @@ const ProductPage = ({ SetSingleProductData }: any) => {
   const totalPages = useSelector(
     (store: any) => store.ProductReducer.totalPages
   );
-  const pro = useSelector((store: any) => store.ProductReducer.products);
-  const Products = pro;
+  const Products = useSelector((store: any) => store.ProductReducer.products);
   const CategoriesArray =
     type == "men"
       ? menCate
@@ -99,7 +98,7 @@ const ProductPage = ({ SetSingleProductData }: any) => {
   useEffect(() => {
     dispatch(productData(URLS, obj));
     //productData(())
-  }, [searchParam]);
+  }, [CategoriesArray, searchParam]);
   // console.log(Products)
   return (
     <ProductAndFilterCont>

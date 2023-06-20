@@ -36,3 +36,5 @@ React / Redux / TyepScript / Json-Server / Chakra UI / Styled-Components / React
 ![Product Page](./src/images/WebsiteImages/ProductPage.png)
 
 ![Single Product](./src/images/WebsiteImages/SingleProductPage.png)
+
+![SAMPLE iMAGE](./src/images/WebsiteImages/Sample.png)

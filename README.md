@@ -1,22 +1,22 @@
-# Glow Grab
+# Glow, Grab,
 
 Deployed Link - https://glowgrab.netlify.app/
 
 ## What is Glow Grab about?
 
-Glow Grab is an E-commerce clothing website providing services including clothing categories in men, women, kids and sneakers.
-This Project is build with React, TypeScript, Redux and Chakra UI library and JSON-server for backend network requests.
+Glow Grab is an E-commerce clothing website providing services including clothing categories in men, women, kids, and sneakers.
+This Project is built with React, TypeScript, Redux, Chakra UI library, and JSON server for backend network requests.
 
 ## Features:-
 
-- Users can create an account by providing necessary information.
-- Registered users can log in securely to access their account.
+- Users can create an account by providing the necessary information.
+- Registered users can log in securely to access their accounts.
 - Products are organized into categories for easy navigation, including men, women, kids, and sneakers.
 - Users can view available products within each category.
 - Users can select products and add them to their shopping cart.
 - Users can proceed to checkout and complete their purchase.
-- Users have the option to sort products based on relevant criteria, such as price or popularity.
-- Users can apply filters to narrow down their product search based on Product types.
+- Users can sort products based on relevant criteria, such as price or popularity.
+- Users can apply filters to narrow their product search based on Product types.
 
 ## Installation
 
